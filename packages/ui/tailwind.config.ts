@@ -5,10 +5,9 @@ const tokenPreset = require("@sheddy/design-tokens/tailwind-preset.js");
 const config: Config = {
   presets: [tokenPreset],
   darkMode: "class",
-  content: [
-  "./app/**/*.{ts,tsx}",
-  "../../packages/ui/components/**/*.{ts,tsx}",
-  "../../packages/ui/lib/**/*.{ts,tsx}",
+ content: [
+  "./components/**/*.{ts,tsx}",
+  "./lib/**/*.{ts,tsx}",
 ],
 };
 

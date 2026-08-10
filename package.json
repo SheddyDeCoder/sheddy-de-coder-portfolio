@@ -9,7 +9,7 @@
     "lint": "pnpm -r lint",
     "format": "prettier --write ."
   },
-  "packageManager": "pnpm@9.0.0",
+  "packageManager": "pnpm@11.8.0",
   "engines": {
     "node": ">=20"
   }
