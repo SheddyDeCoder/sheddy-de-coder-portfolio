@@ -1,0 +1,16 @@
+{
+  "name": "sheddy-de-coder-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "description": "SHEDDY DE CODER Personal Brand Operating System (PBOS) — monorepo root.",
+  "scripts": {
+    "dev": "pnpm --filter frontend dev",
+    "build": "pnpm --filter frontend build",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write ."
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20"
+  }
+}
