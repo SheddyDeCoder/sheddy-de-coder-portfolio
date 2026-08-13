@@ -1,4 +1,4 @@
-import { OpeningIntro, OpeningScene } from "@/components/sections/opening-sequence";
+import { OpeningIntro, OpeningScene, QuickActionPanel } from "@/components/sections/opening-sequence";
 import {
   MissionStatement,
   FloatingTechCards,
@@ -11,6 +11,7 @@ export default function HomePage() {
     <>
       <OpeningIntro />
       <OpeningScene />
+      <QuickActionPanel />
       <MissionStatement />
       <FloatingTechCards />
       <EcosystemPreview />
