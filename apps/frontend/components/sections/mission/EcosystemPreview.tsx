@@ -29,6 +29,17 @@ export function EcosystemPreview() {
             {node}
           </motion.div>
         ))}
+
+        {/**
+ * TODO (Homepage Polish Phase):
+ * Add animated SVG connector lines between the center "SHEDDY DE CODER"
+ * node and each surrounding ecosystem node, per PBOS Section 6.2.9
+ * ("The nodes connect through elegant animated lines"). Deferred
+ * intentionally until all seven homepage sections exist, so motion,
+ * spacing, and visual hierarchy can be evaluated in the context of the
+ * full homepage rather than in isolation. Decision recorded during
+ * Milestone 2 review.
+ */}
       </div>
     </div>
   );
