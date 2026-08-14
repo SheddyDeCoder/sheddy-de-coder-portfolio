@@ -5,6 +5,7 @@ import {
   EcosystemPreview,
   SignatureMetrics,
 } from "@/components/sections/mission";
+import { FeaturedProjects } from "@/components/sections/featured-projects";
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
       <FloatingTechCards />
       <EcosystemPreview />
       <SignatureMetrics />
+      <FeaturedProjects />
     </>
   );
 }
