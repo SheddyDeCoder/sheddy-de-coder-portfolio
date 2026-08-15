@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { spaceGrotesk, inter, jetbrainsMono } from "@/lib/fonts";
 import { Providers } from "@/providers";
 import "./globals.css";
+import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -24,7 +25,10 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="bg-background text-text-primaryDark font-body antialiased">
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
