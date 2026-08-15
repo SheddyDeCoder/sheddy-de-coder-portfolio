@@ -85,7 +85,7 @@ export const QUICK_TIMELINE: { year: string; description: string }[] = [
   {
     year: "2025",
     description:
-      "Rented my first apartment, enrolled in CodeFactory's Full-Stack Development program, launched the 30 Days of Coding Challenge, mentored aspiring developers, expanded client work, and laid the foundation for TechMindsVerse.",
+      "Rented my first apartment, enrolled in CodeFactory's Full-Stack Development program, began working as Social Media Manager at CodeFactory Innovation Hub (ongoing), launched the 30 Days of Coding Challenge, mentored aspiring developers, expanded client work, and laid the foundation for TechMindsVerse.",
   },
   {
     year: "2026",
@@ -101,6 +101,7 @@ export const LEADERSHIP_HIGHLIGHTS: string[] = [
   "Senior Prefect",
   "Community Builder — TechMindsVerse (105+ members)",
   "Mentor — Frontend Development (3 students mentored)",
+   "Social Media Manager — CodeFactory Innovation Hub (2025–Present)",
   "Media & Technology Volunteer — Church Media Team",
   "Founder Dojo Fellow",
 ];
