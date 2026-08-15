@@ -6,10 +6,11 @@ const config: Config = {
   presets: [tokenPreset],
   darkMode: "class",
   content: [
-  "./app/**/*.{ts,tsx}",
-  "../../packages/ui/components/**/*.{ts,tsx}",
-  "../../packages/ui/lib/**/*.{ts,tsx}",
-],
+    "./app/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "../../packages/ui/components/**/*.{ts,tsx}",
+    "../../packages/ui/lib/**/*.{ts,tsx}",
+  ],
 };
 
 export default config;

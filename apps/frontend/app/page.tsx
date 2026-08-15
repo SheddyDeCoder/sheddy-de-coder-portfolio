@@ -6,6 +6,7 @@ import {
   SignatureMetrics,
 } from "@/components/sections/mission";
 import { FeaturedProjects } from "@/components/sections/featured-projects";
+import { AboutPreview } from "@/components/sections/about-preview";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
       <EcosystemPreview />
       <SignatureMetrics />
       <FeaturedProjects />
+      <AboutPreview />
     </>
   );
 }
