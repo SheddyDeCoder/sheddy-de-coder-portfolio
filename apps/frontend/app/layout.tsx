@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { spaceGrotesk, inter, jetbrainsMono } from "@/lib/fonts";
 import { Providers } from "@/providers";
 import "./globals.css";
+import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
@@ -26,6 +27,7 @@ export default function RootLayout({
     >
       <body className="bg-background text-text-primaryDark font-body antialiased">
         <Providers>
+          <Navbar />
           {children}
           <Footer />
         </Providers>
