@@ -25,13 +25,14 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable}`}
       suppressHydrationWarning
     >
-      <body className="bg-background text-text-primaryDark font-body antialiased">
-        <Providers>
-          <Navbar />
-          {children}
-          <Footer />
-        </Providers>
-      </body>
+      
+     <body className="bg-background text-text-primaryDark font-body antialiased">
+     <Providers>
+     <Navbar />
+     {children}
+     <Footer />
+    </Providers>
+    </body>
     </html>
   );
 }
