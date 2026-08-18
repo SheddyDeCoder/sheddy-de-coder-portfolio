@@ -9,6 +9,14 @@ import { FeaturedProjects } from "@/components/sections/featured-projects";
 import { AboutPreview } from "@/components/sections/about-preview";
 import { WorkWithMePreview } from "@/components/sections/work-with-me";
 import { TrustSocialProof } from "@/components/sections/trust-social-proof";
+import {
+  LatestUpdatesFeed,
+  BlogPreview,
+  UpcomingEvents,
+  NewsletterSignup,
+  SocialConnection,
+  FinalCta,
+} from "@/components/sections/latest-updates-cta";
 
 export default function HomePage() {
   return (
@@ -24,6 +32,12 @@ export default function HomePage() {
       <AboutPreview />
       <WorkWithMePreview />
       <TrustSocialProof />
+      <LatestUpdatesFeed />
+      <BlogPreview />
+      <UpcomingEvents />
+      <NewsletterSignup />
+      <SocialConnection />
+      <FinalCta />
     </>
   );
 }

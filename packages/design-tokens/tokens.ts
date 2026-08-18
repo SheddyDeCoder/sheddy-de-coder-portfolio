@@ -1,17 +1,53 @@
 export const colors = {
+  // Brand tokens — stable across both themes, per Section 07's theme-architecture rule
+  brand: {
+    red: "#C1121F",
+    redHover: "#A50F1B",
+    redActive: "#870C16",
+    redSoft: "#FDE8EA",
+    white: "#FFFFFF",
+    black: "#121212",
+  },
+
+  // Full neutral scale — centralized, never scattered in components
+  neutral: {
+    950: "#121212",
+    900: "#1B1B1B",
+    800: "#2B2B2B",
+    700: "#404040",
+    600: "#5F5F5F",
+    500: "#737373",
+    400: "#A1A1A1",
+    300: "#D4D4D4",
+    200: "#E5E5E5",
+    100: "#F5F5F5",
+    50: "#FAFAFA",
+    white: "#FFFFFF",
+  },
+
+  // Theme-dependent surface/text/border tokens — these are what actually change per theme
   background: { dark: "#121212", light: "#FFFFFF" },
-  surface: { dark: "#1A1A1A", light: "#F8F8F8" },
-  primary: "#D4AF37",
-  secondary: "#C9A227",
+  surface: { dark: "#1B1B1B", light: "#FAFAFA" },
+  card: { dark: "#1B1B1B", light: "#FFFFFF" },
+  primary: "#C1121F",
+  primaryHover: "#A50F1B",
+  primaryActive: "#870C16",
+  primarySoft: "#FDE8EA",
   text: {
     primaryDark: "#FFFFFF",
-    secondaryDark: "#A1A1AA",
+    secondaryDark: "#D4D4D4",
+    mutedDark: "#A1A1A1",
     primaryLight: "#121212",
-    secondaryLight: "#52525B",
+    secondaryLight: "#404040",
+    mutedLight: "#737373",
   },
   border: {
-    dark: "rgba(212,175,55,0.18)",
-    light: "#E5E7EB",
+    dark: "#2B2B2B",
+    light: "#E5E5E5",
+  },
+  divider: {
+    dark: "#2B2B2B",
+    light: "#F1F1F1",
   },
   success: "#22C55E",
   warning: "#F59E0B",
@@ -48,5 +84,5 @@ export const shadows = {
   sm: "0 1px 2px rgba(0,0,0,0.06)",
   md: "0 4px 12px rgba(0,0,0,0.10)",
   lg: "0 12px 32px rgba(0,0,0,0.14)",
-  glow: "0 0 24px rgba(212,175,55,0.25)",
+  glow: "0 0 24px rgba(193,18,31,0.20)",
 } as const;
