@@ -7,7 +7,11 @@ import type { Project } from "./featured-projects.types";
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <article className="flex flex-col gap-4 rounded-xl border border-border bg-surface/40 p-4 transition-transform hover:-translate-y-1">
-      <ProjectCoverImage src={project.coverImage} name={project.name} />
+      <ProjectCoverImage
+        src={project.coverImage}
+        alt={project.name}
+        projectName={project.name}
+      />
 
       <div className="flex items-center justify-between gap-2">
         <span className="font-body text-xs uppercase tracking-wide text-text-secondaryDark">

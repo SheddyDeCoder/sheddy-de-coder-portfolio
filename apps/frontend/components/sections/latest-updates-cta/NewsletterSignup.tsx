@@ -16,6 +16,8 @@ export function NewsletterSignup() {
       </p>
       <form className="mt-4 flex gap-2">
         <input
+          id="newsletter-email"
+          name="email"
           type="email"
           placeholder="Email Address"
           disabled

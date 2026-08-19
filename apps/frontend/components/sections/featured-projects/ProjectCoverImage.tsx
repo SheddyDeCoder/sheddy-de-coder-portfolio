@@ -1,35 +1,39 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
+import Image from "next/image";
 
 export function ProjectCoverImage({
   src,
-  name,
-}: {
+  alt,
+  projectName,
+}:
+ {
   src: string;
-  name: string;
-}) {
-  const [errored, setErrored] = useState(false);
+  alt: string;
+  projectName: string;
+}) 
+{
+  const [failed, setFailed] = useState(false);
 
-  if (errored) {
+  if (failed) {
     return (
-      <div className="flex aspect-[16/10] w-full items-center justify-center rounded-lg border border-border bg-surface">
-        <span className="px-4 text-center font-display text-lg font-semibold text-text-secondaryDark">
-          {name}
+      <div className="flex aspect-video w-full items-center justify-center rounded-lg border border-border bg-surface/50">
+        <span className="font-display text-sm text-text-secondaryDark">
+          {projectName}
         </span>
       </div>
     );
   }
 
   return (
-    <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg border border-border bg-surface">
+    <div className="relative aspect-video w-full overflow-hidden rounded-lg">
       <Image
         src={src}
-        alt={name}
+        alt={alt}
         fill
         className="object-cover"
-        onError={() => setErrored(true)}
+        onError={() => setFailed(true)}
       />
     </div>
   );
