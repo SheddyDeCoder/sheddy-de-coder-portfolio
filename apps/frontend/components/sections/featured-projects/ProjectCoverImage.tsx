@@ -19,7 +19,7 @@ export function ProjectCoverImage({
   if (failed) {
     return (
       <div className="flex aspect-video w-full items-center justify-center rounded-lg border border-border bg-surface/50">
-        <span className="font-display text-sm text-text-secondaryDark">
+        <span className="font-display text-sm text-text-secondary">
           {projectName}
         </span>
       </div>

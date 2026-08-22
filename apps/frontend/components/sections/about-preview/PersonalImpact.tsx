@@ -10,7 +10,7 @@ export function PersonalImpact() {
           <p className="font-display text-2xl font-bold text-primary">
             {metric.value}
           </p>
-          <p className="mt-1 font-body text-xs text-text-secondaryDark">
+          <p className="mt-1 font-body text-xs text-text-secondary">
             {metric.label}
           </p>
         </div>

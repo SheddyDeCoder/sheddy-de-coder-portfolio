@@ -6,7 +6,7 @@ import { SERVICE_PROCESS } from "./work-with-me.constants";
 export function ServiceProcess() {
   return (
     <section className="mx-auto max-w-4xl px-6 py-20 md:py-28">
-      <h2 className="font-display text-2xl font-bold text-text-primaryDark md:text-3xl">
+      <h2 className="font-display text-2xl font-bold text-text-primary md:text-3xl">
         How We'll Work Together
       </h2>
       <ol className="mt-10 space-y-6">
@@ -22,7 +22,7 @@ export function ServiceProcess() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary font-display text-sm font-semibold text-primary">
               {i + 1}
             </span>
-            <span className="font-body text-base text-text-primaryDark">
+            <span className="font-body text-base text-text-primary">
               {step}
             </span>
           </motion.li>

@@ -7,14 +7,14 @@ export function PricingPreview() {
 
   return (
     <div className="rounded-xl border border-border bg-surface/40 p-6">
-      <h3 className="mb-4 font-display text-lg font-semibold text-text-primaryDark">
+      <h3 className="mb-4 font-display text-lg font-semibold text-text-primary">
         Pricing
       </h3>
       <ul className="flex flex-col gap-2">
         {items.map((item) => (
           <li
             key={item.service}
-            className="flex justify-between font-body text-sm text-text-secondaryDark"
+            className="flex justify-between font-body text-sm text-text-secondary"
           >
             <span>{item.service}</span>
             <span className="text-primary">{item.value}</span>

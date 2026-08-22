@@ -14,10 +14,10 @@ export function LatestUpdatesFeed() {
           <p className="font-body text-xs uppercase text-primary">
             {update.platform}
           </p>
-          <p className="mt-1 font-display text-sm font-semibold text-text-primaryDark">
+          <p className="mt-1 font-display text-sm font-semibold text-text-primary">
             {update.title}
           </p>
-          <p className="mt-1 font-body text-xs text-text-secondaryDark">
+          <p className="mt-1 font-body text-xs text-text-secondary">
             {update.description}
           </p>
         </a>

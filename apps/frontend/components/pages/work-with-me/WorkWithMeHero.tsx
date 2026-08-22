@@ -20,7 +20,7 @@ export function WorkWithMeHero() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-        className="mt-6 font-display text-3xl font-bold text-text-primaryDark md:text-5xl"
+        className="mt-6 font-display text-3xl font-bold text-text-primary md:text-5xl"
       >
         {POSITIONING.heading}
       </motion.h1>
@@ -29,7 +29,7 @@ export function WorkWithMeHero() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-        className="mx-auto mt-6 max-w-2xl font-body text-base text-text-secondaryDark md:text-lg"
+        className="mx-auto mt-6 max-w-2xl font-body text-base text-text-secondary md:text-lg"
       >
         {POSITIONING.body}
       </motion.p>
@@ -38,7 +38,7 @@ export function WorkWithMeHero() {
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-        className="mt-8 font-body text-sm text-text-secondaryDark"
+        className="mt-8 font-body text-sm text-text-secondary"
       >
         Flagship service: <span className="text-primary">{PRIMARY_SERVICE.name}</span>
       </motion.p>

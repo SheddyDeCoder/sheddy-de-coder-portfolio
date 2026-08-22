@@ -8,7 +8,7 @@ export function CommunityImpact() {
           <p className="font-display text-xl font-bold text-primary">
             {item.value}
           </p>
-          <p className="mt-1 font-body text-xs text-text-secondaryDark">
+          <p className="mt-1 font-body text-xs text-text-secondary">
             {item.label}
           </p>
         </div>

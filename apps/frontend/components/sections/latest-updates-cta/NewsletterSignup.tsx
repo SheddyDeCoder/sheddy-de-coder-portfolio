@@ -8,10 +8,10 @@ import { NEWSLETTER } from "./latest-updates-cta.constants";
 export function NewsletterSignup() {
   return (
     <div className="mx-auto max-w-md text-center">
-      <h3 className="font-display text-xl font-semibold text-text-primaryDark">
+      <h3 className="font-display text-xl font-semibold text-text-primary">
         {NEWSLETTER.heading}
       </h3>
-      <p className="mt-2 font-body text-sm text-text-secondaryDark">
+      <p className="mt-2 font-body text-sm text-text-secondary">
         {NEWSLETTER.body}
       </p>
       <form className="mt-4 flex gap-2">
@@ -21,11 +21,11 @@ export function NewsletterSignup() {
           type="email"
           placeholder="Email Address"
           disabled
-          className="flex-1 rounded-md border border-border bg-background px-3 py-2 font-body text-sm text-text-primaryDark"
+          className="flex-1 rounded-md border border-border bg-background px-3 py-2 font-body text-sm text-text-primary"
         />
         <Button disabled>Subscribe</Button>
       </form>
-      <p className="mt-2 font-body text-xs text-text-secondaryDark">
+      <p className="mt-2 font-body text-xs text-text-secondary">
         {NEWSLETTER.privacyNotice}
       </p>
     </div>

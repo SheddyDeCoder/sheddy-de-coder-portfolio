@@ -6,7 +6,7 @@ import { LEADERSHIP_HIGHLIGHTS } from "./about.constants";
 export function LeadershipHighlights() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-20 md:py-28">
-      <h2 className="font-display text-2xl font-bold text-text-primaryDark md:text-3xl">
+      <h2 className="font-display text-2xl font-bold text-text-primary md:text-3xl">
         Leadership & Involvement
       </h2>
 
@@ -20,11 +20,11 @@ export function LeadershipHighlights() {
             transition={{ duration: 0.4, delay: i * 0.04, ease: "easeOut" }}
             className="rounded-lg border border-border bg-surface/40 p-4"
           >
-            <p className="font-display text-sm font-semibold text-text-primaryDark">
+            <p className="font-display text-sm font-semibold text-text-primary">
               {entry.role}
             </p>
             {entry.org && (
-              <p className="mt-1 font-body text-sm text-text-secondaryDark">
+              <p className="mt-1 font-body text-sm text-text-secondary">
                 {entry.org}
               </p>
             )}

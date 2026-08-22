@@ -6,7 +6,7 @@ import { JOURNEY_TIMELINE } from "./about.constants";
 export function JourneyTimeline() {
   return (
     <section className="mx-auto max-w-3xl px-6 py-20 md:py-28">
-      <h2 className="font-display text-2xl font-bold text-text-primaryDark md:text-3xl">
+      <h2 className="font-display text-2xl font-bold text-text-primary md:text-3xl">
         The Journey
       </h2>
 
@@ -24,7 +24,7 @@ export function JourneyTimeline() {
             <p className="font-display text-sm font-semibold text-primary">
               {entry.year}
             </p>
-            <p className="mt-1 font-body text-base text-text-secondaryDark">
+            <p className="mt-1 font-body text-base text-text-secondary">
               {entry.description}
             </p>
           </motion.div>

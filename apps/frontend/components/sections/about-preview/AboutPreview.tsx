@@ -28,13 +28,13 @@ export function AboutPreview() {
 
         <div className="flex flex-1 flex-col gap-10">
           <div>
-            <h2 className="font-display text-2xl font-bold text-text-primaryDark md:text-4xl">
+            <h2 className="font-display text-2xl font-bold text-text-primary md:text-4xl">
               {ABOUT_INTRO.heading}
             </h2>
             <p className="mt-2 font-body text-base text-primary">
               {ABOUT_INTRO.subheading}
             </p>
-            <p className="mt-4 max-w-xl font-body text-sm text-text-secondaryDark md:text-base">
+            <p className="mt-4 max-w-xl font-body text-sm text-text-secondary md:text-base">
               {ABOUT_INTRO.body}
             </p>
           </div>
@@ -43,28 +43,28 @@ export function AboutPreview() {
           <PhilosophyQuote />
 
           <div>
-            <h3 className="mb-4 font-display text-lg font-semibold text-text-primaryDark">
+            <h3 className="mb-4 font-display text-lg font-semibold text-text-primary">
               Journey
             </h3>
             <QuickTimeline />
           </div>
 
           <div>
-            <h3 className="mb-4 font-display text-lg font-semibold text-text-primaryDark">
+            <h3 className="mb-4 font-display text-lg font-semibold text-text-primary">
               Leadership
             </h3>
             <LeadershipHighlights />
           </div>
 
           <div>
-            <h3 className="mb-4 font-display text-lg font-semibold text-text-primaryDark">
+            <h3 className="mb-4 font-display text-lg font-semibold text-text-primary">
               Values
             </h3>
             <ValuesGrid />
           </div>
 
           <div>
-            <h3 className="mb-4 font-display text-lg font-semibold text-text-primaryDark">
+            <h3 className="mb-4 font-display text-lg font-semibold text-text-primary">
               Skills
             </h3>
             <SkillsSnapshot />

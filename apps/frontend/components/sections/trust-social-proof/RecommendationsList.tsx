@@ -10,14 +10,14 @@ export function RecommendationsList() {
           key={rec.name}
           className="rounded-xl border border-border bg-surface/40 p-6"
         >
-          <p className="font-body text-sm text-text-secondaryDark">
+          <p className="font-body text-sm text-text-secondary">
             “{rec.message}”
           </p>
           <footer className="mt-4 border-t border-border pt-4">
-            <p className="font-display text-sm font-semibold text-text-primaryDark">
+            <p className="font-display text-sm font-semibold text-text-primary">
               {rec.name}
             </p>
-            <p className="font-body text-xs text-text-secondaryDark">
+            <p className="font-body text-xs text-text-secondary">
               {rec.position}, {rec.organization}
             </p>
           </footer>

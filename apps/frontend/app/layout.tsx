@@ -26,7 +26,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       
-     <body className="bg-background text-text-primaryDark font-body antialiased">
+     <body className="bg-background text-text-primary font-body antialiased">
      <Providers>
      <Navbar />
      {children}

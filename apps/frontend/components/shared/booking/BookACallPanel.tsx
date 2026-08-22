@@ -1,7 +1,7 @@
 "use client";
 
 import { Calendar, MessageCircle, Mail } from "lucide-react";
-import { BOOKING_LINKS } from "./work-with-me.config";
+import { BOOKING_LINKS } from "./booking.config";
 
 const OPTIONS = [
   { key: "scheduler" as const, label: "Schedule a Call", icon: Calendar },
@@ -12,7 +12,7 @@ const OPTIONS = [
 export function BookACallPanel() {
   return (
     <section className="mx-auto max-w-3xl px-6 py-20 text-center md:py-28">
-      <h2 className="font-display text-2xl font-bold text-text-primaryDark md:text-3xl">
+      <h2 className="font-display text-2xl font-bold text-text-primary md:text-3xl">
         Book a Call
       </h2>
       <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
@@ -34,7 +34,7 @@ export function BookACallPanel() {
               key={key}
               disabled
               aria-disabled="true"
-              className="flex cursor-not-allowed items-center justify-center gap-2 rounded-full border border-border px-6 py-3 font-body text-sm text-text-secondaryDark opacity-60"
+              className="flex cursor-not-allowed items-center justify-center gap-2 rounded-full border border-border px-6 py-3 font-body text-sm text-text-secondary opacity-60"
             >
               <Icon className="h-4 w-4" />
               {label} — Coming Soon

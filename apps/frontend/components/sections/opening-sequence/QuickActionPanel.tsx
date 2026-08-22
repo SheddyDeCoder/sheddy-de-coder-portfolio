@@ -47,7 +47,7 @@ export function QuickActionPanel() {
               >
                 <Link
                   href={action.href as string}
-                  className="flex items-center gap-2 rounded-full border border-border bg-surface/90 px-4 py-2 font-body text-sm text-text-secondaryDark backdrop-blur-sm hover:text-primary"
+                  className="flex items-center gap-2 rounded-full border border-border bg-surface/90 px-4 py-2 font-body text-sm text-text-secondary backdrop-blur-sm hover:text-primary"
                 >
                   {Icon && <Icon className="h-4 w-4" />}
                   {action.label}

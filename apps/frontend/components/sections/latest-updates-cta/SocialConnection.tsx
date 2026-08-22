@@ -33,7 +33,7 @@ export function SocialConnection() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Visit ${link.platform} profile (opens in a new tab)`}
-            className="rounded-full border border-border p-2 text-text-secondaryDark hover:border-primary/40 hover:text-primary"
+            className="rounded-full border border-border p-2 text-text-secondary hover:border-primary/40 hover:text-primary"
           >
             {Icon && <Icon className="h-4 w-4" />}
           </a>

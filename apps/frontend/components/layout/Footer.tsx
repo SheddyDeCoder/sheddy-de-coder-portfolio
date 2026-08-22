@@ -16,7 +16,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border px-6 py-12">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 text-center">
-        <p className="font-display text-sm font-semibold text-text-primaryDark">
+        <p className="font-display text-sm font-semibold text-text-primary">
           SHEDDY DE CODER
         </p>
 
@@ -25,7 +25,7 @@ export function Footer() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-body text-sm text-text-secondaryDark hover:text-primary"
+              className="font-body text-sm text-text-secondary hover:text-primary"
             >
               {link.label}
             </Link>
@@ -34,7 +34,7 @@ export function Footer() {
 
         <SocialConnection />
 
-        <p className="font-body text-xs text-text-secondaryDark">
+        <p className="font-body text-xs text-text-secondary">
           © {year} Shedrack Nliam — SHEDDY DE CODER. All rights reserved.
         </p>
       </div>

@@ -10,10 +10,10 @@ export function SpeakingHighlights() {
           key={event.eventName}
           className="rounded-lg border border-border bg-surface/40 p-4"
         >
-          <p className="font-display text-sm font-semibold text-text-primaryDark">
+          <p className="font-display text-sm font-semibold text-text-primary">
             {event.eventName}
           </p>
-          <p className="mt-1 font-body text-xs text-text-secondaryDark">
+          <p className="mt-1 font-body text-xs text-text-secondary">
             {event.topic} — {event.location}, {event.year}
           </p>
         </div>

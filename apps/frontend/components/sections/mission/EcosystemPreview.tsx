@@ -100,7 +100,7 @@ export function EcosystemPreview() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.4, delay: 0.1 + i * 0.05, ease: "easeOut" }}
-            className="rounded-md border border-border bg-surface/50 px-3 py-2 text-center font-body text-xs text-text-secondaryDark md:text-sm"
+            className="rounded-md border border-border bg-surface/50 px-3 py-2 text-center font-body text-xs text-text-secondary md:text-sm"
           >
             {node}
           </motion.div>

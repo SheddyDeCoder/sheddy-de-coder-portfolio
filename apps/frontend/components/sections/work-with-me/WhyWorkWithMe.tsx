@@ -8,10 +8,10 @@ export function WhyWorkWithMe() {
           key={item.title}
           className="rounded-lg border border-border bg-surface/30 p-4"
         >
-          <h4 className="font-display text-sm font-semibold text-text-primaryDark">
+          <h4 className="font-display text-sm font-semibold text-text-primary">
             {item.title}
           </h4>
-          <p className="mt-1 font-body text-xs text-text-secondaryDark">
+          <p className="mt-1 font-body text-xs text-text-secondary">
             {item.description}
           </p>
         </div>

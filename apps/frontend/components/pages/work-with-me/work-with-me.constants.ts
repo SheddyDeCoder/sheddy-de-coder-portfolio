@@ -46,6 +46,7 @@ export const MEDIA_SERVICES = [
   "Content Production",
   "Creative Direction",
   "Church Media Support",
+  "Projection & Presentation Systems",
 ] as const;
 
 export const CHURCH_SERVICES = [
@@ -55,6 +56,29 @@ export const CHURCH_SERVICES = [
   "Technical Consulting",
   "Digital Growth Strategy",
   "Branding Support",
+] as const;
+
+export const DIGITAL_GROWTH_SERVICES = [
+  "Content Strategy",
+  "Digital Visibility",
+  "Social Media Growth",
+  "Organic Growth Strategies",
+  "Audience Growth",
+  "Content Calendars",
+  "SEO Fundamentals",
+  "Brand Positioning",
+  "Online Visibility Consulting",
+] as const;
+
+export const BRANDING_SERVICES = [
+  "Logos",
+  "Brand Assets",
+  "Flyers",
+  "Event Graphics",
+  "Church Graphics",
+  "Presentation Slides",
+  "Social Media Creatives",
+  "Marketing Designs",
 ] as const;
 
 export const SERVICE_PROCESS = [
@@ -73,3 +97,22 @@ export const MENTORSHIP = {
   description: "Application-based — free or paid depending on the situation.",
   ctaLabel: "Apply for Mentorship",
 } as const;
+
+export const TOOLS_INVENTORY = {
+  Development: ["VS Code", "Git", "GitHub", "Postman", "Supabase", "Prisma", "Vercel", "Render", "npm", "Trello", "Notion"],
+  Design: ["Canva", "PixelLab", "Figma"],
+  Media: ["CapCut", "OBS", "EasyWorship"],
+  Productivity: ["Google Workspace", "Microsoft Office", "Google Drive", "Google Docs", "Google Sheets", "Google Slides"],
+  AI: ["ChatGPT", "Claude", "Gemini", "Grok", "Perplexity", "FLUX", "Nano Banana", "Canva AI", "CapCut AI"],
+} as const;
+
+export const FUTURE_RESOURCES = [
+  "AI Prompts",
+  "Content Calendar Prompts",
+  "Image Generation Prompts",
+  "Studio Portrait Prompts",
+  "Branding Templates",
+  "Website Planning Templates",
+  "Startup Documentation Templates",
+  "Church Media Resources",
+] as const;

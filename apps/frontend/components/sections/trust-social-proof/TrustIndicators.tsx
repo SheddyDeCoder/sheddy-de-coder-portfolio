@@ -6,7 +6,7 @@ export function TrustIndicators() {
       {TRUST_INDICATORS.map((item) => (
         <span
           key={item}
-          className="rounded-full border border-border px-4 py-1.5 font-body text-xs text-text-secondaryDark"
+          className="rounded-full border border-border px-4 py-1.5 font-body text-xs text-text-secondary"
         >
           {item}
         </span>

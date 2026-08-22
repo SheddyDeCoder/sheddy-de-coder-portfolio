@@ -94,6 +94,9 @@ export const CAPABILITIES = [
   "Online Visibility",
   "Media Production",
   "Human + Technology Collaborative Intelligence (HTCI)",
+  "Digital Growth",
+  "Branding & Design",
+  "Artificial Intelligence",
 ] as const;
 
 export const IMPACT_METRICS = [
@@ -104,3 +107,53 @@ export const IMPACT_METRICS = [
   { label: "Workshops Attended", value: "5+" },
   { label: "Public Talks", value: 1 },
 ] as const;
+
+export const SOCIAL_MEDIA_EXPERIENCE = [
+  { org: "CodeFactory Innovation Hub" },
+  { org: "TechMindsVerse", note: "Community & brand channels" },
+  { org: "City of Restoration Flame Worldwide" },
+  { org: "City of Restoration Youth" },
+  { org: "A Pastor", note: "Netherlands" },
+  { org: "Fashion & Clothing Materials Business", note: "Lagos" },
+] as const;
+
+export const SOCIAL_MEDIA_RESPONSIBILITIES = [
+  "Social Media Management",
+  "Content Planning",
+  "Content Calendars",
+  "Community Engagement",
+  "Video Editing",
+  "Educational Content",
+  "Organic Growth",
+  "Brand Visibility",
+  "Strategy",
+  "Audience Development",
+] as const;
+
+export const MEDIA_AV_EXPERIENCE = [
+  "Photography",
+  "Videography",
+  "Event Coverage",
+  "Live Streaming",
+  "Projection Systems",
+  "Presentation Systems",
+  "HDMI Display Management",
+  "Media Coordination",
+  "Technical Setup",
+  "Audio Coordination",
+  "Lighting",
+] as const;
+
+export const CAREER_HIGHLIGHTS = {
+  biggestAchievement:
+    "Creating an independent workspace that enabled consistent learning, product development, client work, and content creation despite limited resources.",
+  mostProudProject: "TechMindsVerse OS",
+  hardestTechnicalChallenge:
+    "Designing and building EIMB — including authentication, account generation, simulated banking flows, dashboards, savings, referrals, and fintech architecture.",
+  hardestLifeChallenge:
+    "Continuing to learn, build products, work with clients, and grow professionally despite unstable electricity, inconsistent internet access, and limited resources.",
+  professionalIdentity:
+    "A builder known for excellence, clarity, organization, and long-term thinking.",
+  corePhilosophy:
+    "I build products because I believe technology should solve real problems and create meaningful opportunities for people.",
+} as const;

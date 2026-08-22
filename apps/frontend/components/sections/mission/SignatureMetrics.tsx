@@ -20,7 +20,7 @@ export function SignatureMetrics() {
           <p className="font-display text-3xl font-bold text-primary">
             {metric.value}
           </p>
-          <p className="mt-1 font-body text-sm text-text-secondaryDark">
+          <p className="mt-1 font-body text-sm text-text-secondary">
             {metric.label}
           </p>
         </motion.div>

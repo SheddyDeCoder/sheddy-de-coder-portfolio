@@ -42,10 +42,10 @@ export function AboutHero() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1, ease: "easeOut" }}
             >
-              <h2 className="font-display text-xl font-bold text-text-primaryDark md:text-2xl">
+              <h2 className="font-display text-xl font-bold text-text-primary md:text-2xl">
                 {q.question}
               </h2>
-              <p className="mt-2 font-body text-base leading-relaxed text-text-secondaryDark">
+              <p className="mt-2 font-body text-base leading-relaxed text-text-secondary">
                 {q.answer}
               </p>
             </motion.div>
@@ -57,7 +57,7 @@ export function AboutHero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: 0.3, ease: "easeOut" }}
-          className="mt-10 border-l-2 border-primary pl-4 font-body text-lg italic text-text-primaryDark"
+          className="mt-10 border-l-2 border-primary pl-4 font-body text-lg italic text-text-primary"
         >
           {ABOUT_HERO.philosophyQuote}
         </motion.p>

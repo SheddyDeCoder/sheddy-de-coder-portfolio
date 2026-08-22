@@ -5,10 +5,10 @@ import { FINAL_CTA, CLOSING_BRAND_LINE } from "./latest-updates-cta.constants";
 export function FinalCta() {
   return (
     <section className="mx-auto max-w-3xl px-6 py-24 text-center">
-      <h2 className="font-display text-2xl font-bold text-text-primaryDark md:text-4xl">
+      <h2 className="font-display text-2xl font-bold text-text-primary md:text-4xl">
         {FINAL_CTA.heading}
       </h2>
-      <p className="mx-auto mt-4 max-w-xl font-body text-text-secondaryDark">
+      <p className="mx-auto mt-4 max-w-xl font-body text-text-secondary">
         {FINAL_CTA.body}
       </p>
 
@@ -30,14 +30,14 @@ export function FinalCta() {
           <Link
             key={action.label}
             href={action.href}
-            className="font-body text-sm text-text-secondaryDark underline underline-offset-4 hover:text-primary"
+            className="font-body text-sm text-text-secondary underline underline-offset-4 hover:text-primary"
           >
             {action.label}
           </Link>
         ))}
       </div>
 
-      <p className="mt-16 font-display text-sm tracking-wide text-text-secondaryDark">
+      <p className="mt-16 font-display text-sm tracking-wide text-text-secondary">
         {CLOSING_BRAND_LINE}
       </p>
     </section>

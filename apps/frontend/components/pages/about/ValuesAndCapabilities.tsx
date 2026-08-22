@@ -8,7 +8,7 @@ export function ValuesAndCapabilities() {
     <section className="mx-auto max-w-5xl px-6 py-20 md:py-28">
       <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
         <div>
-          <h2 className="font-display text-2xl font-bold text-text-primaryDark">
+          <h2 className="font-display text-2xl font-bold text-text-primary">
             Values
           </h2>
           <div className="mt-6 flex flex-wrap gap-2">
@@ -19,7 +19,7 @@ export function ValuesAndCapabilities() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: i * 0.03, ease: "easeOut" }}
-                className="rounded-full border border-border px-3 py-1 font-body text-sm text-text-secondaryDark"
+                className="rounded-full border border-border px-3 py-1 font-body text-sm text-text-secondary"
               >
                 {value}
               </motion.span>
@@ -28,7 +28,7 @@ export function ValuesAndCapabilities() {
         </div>
 
         <div>
-          <h2 className="font-display text-2xl font-bold text-text-primaryDark">
+          <h2 className="font-display text-2xl font-bold text-text-primary">
             Capabilities
           </h2>
           <div className="mt-6 flex flex-wrap gap-2">
@@ -54,7 +54,7 @@ export function ValuesAndCapabilities() {
             <p className="font-display text-2xl font-bold text-primary md:text-3xl">
               {metric.value}
             </p>
-            <p className="mt-1 font-body text-xs text-text-secondaryDark md:text-sm">
+            <p className="mt-1 font-body text-xs text-text-secondary md:text-sm">
               {metric.label}
             </p>
           </div>

@@ -28,7 +28,7 @@ export function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <Link
           href="/"
-          className="font-display text-sm font-semibold text-text-primaryDark"
+          className="font-display text-sm font-semibold text-text-primary"
         >
           SHEDDY DE CODER
         </Link>
@@ -38,7 +38,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-body text-sm text-text-secondaryDark hover:text-primary"
+              className="font-body text-sm text-text-secondary hover:text-primary"
             >
               {link.label}
             </Link>
@@ -50,7 +50,7 @@ export function Navbar() {
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               aria-label="Toggle theme"
-              className="rounded-full border border-border p-2 text-text-secondaryDark hover:text-primary"
+              className="rounded-full border border-border p-2 text-text-secondary hover:text-primary"
             >
               {theme === "dark" ? (
                 <Sun className="h-4 w-4" />
@@ -67,7 +67,7 @@ export function Navbar() {
           <button
             onClick={() => setMobileOpen((o) => !o)}
             aria-label="Toggle menu"
-            className="rounded-full border border-border p-2 text-text-secondaryDark md:hidden"
+            className="rounded-full border border-border p-2 text-text-secondary md:hidden"
           >
             {mobileOpen ? (
               <X className="h-4 w-4" />
@@ -85,7 +85,7 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setMobileOpen(false)}
-              className="font-body text-sm text-text-secondaryDark hover:text-primary"
+              className="font-body text-sm text-text-secondary hover:text-primary"
             >
               {link.label}
             </Link>

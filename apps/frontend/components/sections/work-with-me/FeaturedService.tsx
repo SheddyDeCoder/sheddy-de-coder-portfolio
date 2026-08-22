@@ -8,10 +8,10 @@ export function FeaturedService() {
       <span className="font-body text-xs uppercase tracking-wide text-primary">
         Featured
       </span>
-      <h3 className="mt-2 font-display text-xl font-semibold text-text-primaryDark">
+      <h3 className="mt-2 font-display text-xl font-semibold text-text-primary">
         {FEATURED_SERVICE.title}
       </h3>
-      <p className="mt-2 font-body text-sm text-text-secondaryDark">
+      <p className="mt-2 font-body text-sm text-text-secondary">
         {FEATURED_SERVICE.description}
       </p>
       <Button asChild variant="outline" className="mt-4">

@@ -10,10 +10,10 @@ export function UpcomingEvents() {
           key={event.title}
           className="rounded-lg border border-border bg-surface/40 p-4"
         >
-          <p className="font-display text-sm font-semibold text-text-primaryDark">
+          <p className="font-display text-sm font-semibold text-text-primary">
             {event.title}
           </p>
-          <p className="mt-1 font-body text-xs text-text-secondaryDark">
+          <p className="mt-1 font-body text-xs text-text-secondary">
             {event.date} — {event.location}
           </p>
         </div>

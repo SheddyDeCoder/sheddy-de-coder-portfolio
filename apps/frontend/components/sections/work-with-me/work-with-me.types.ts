@@ -12,3 +12,4 @@ export interface PricingItem {
   service: string;
   value: string | null; // null = not yet confirmed; renders nothing until provided
 }
+

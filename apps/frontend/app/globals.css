@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --color-background: #FFFFFF;
+  --color-surface: #FAFAFA;
+  --color-card: #FFFFFF;
+  --color-border: #E5E5E5;
+  --color-divider: #F1F1F1;
+  --color-text-primary: #121212;
+  --color-text-secondary: #404040;
+  --color-text-muted: #737373;
+}
+
+.dark {
+  --color-background: #121212;
+  --color-surface: #1B1B1B;
+  --color-card: #1B1B1B;
+  --color-border: #2B2B2B;
+  --color-divider: #2B2B2B;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #D4D4D4;
+  --color-text-muted: #A1A1A1;
+}

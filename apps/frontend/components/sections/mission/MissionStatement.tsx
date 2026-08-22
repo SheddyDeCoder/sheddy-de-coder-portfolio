@@ -17,7 +17,7 @@ export function MissionStatement() {
 
   return (
     <section className="mx-auto flex max-w-4xl flex-col items-center px-6 py-24 text-center md:py-32">
-      <p className="font-display text-2xl leading-snug text-text-primaryDark md:text-4xl">
+      <p className="font-display text-2xl leading-snug text-text-primary md:text-4xl">
         {words.map((word, i) => {
           const clean = word.replace(/[.,]/g, "");
           const isEmphasized = EMPHASIZED_WORDS.includes(clean);
@@ -31,7 +31,7 @@ export function MissionStatement() {
               className={
                 isEmphasized
                   ? "text-primary"
-                  : "text-text-primaryDark"
+                  : "text-text-primary"
               }
             >
               {word}{" "}

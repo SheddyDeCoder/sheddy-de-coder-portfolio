@@ -17,7 +17,7 @@ export function OpeningScene() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="font-display text-3xl font-bold text-text-primaryDark md:text-5xl"
+          className="font-display text-3xl font-bold text-text-primary md:text-5xl"
         >
           {OPENING_SCENE.heading}
         </motion.h1>
@@ -35,7 +35,7 @@ export function OpeningScene() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-          className="max-w-xl font-body text-base text-text-secondaryDark md:text-lg"
+          className="max-w-xl font-body text-base text-text-secondary md:text-lg"
         >
           {OPENING_SCENE.positioning}
         </motion.p>
@@ -44,7 +44,7 @@ export function OpeningScene() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45, ease: "easeOut" }}
-          className="font-body text-base italic text-text-secondaryDark"
+          className="font-body text-base italic text-text-secondary"
         >
           {OPENING_SCENE.supportingMessage}
         </motion.p>
@@ -67,7 +67,7 @@ export function OpeningScene() {
           </Button>
           <Link
             href={OPENING_SCENE.tertiaryCta.href}
-            className="font-body text-sm text-text-secondaryDark underline underline-offset-4 hover:text-primary"
+            className="font-body text-sm text-text-secondary underline underline-offset-4 hover:text-primary"
           >
             {OPENING_SCENE.tertiaryCta.label}
           </Link>

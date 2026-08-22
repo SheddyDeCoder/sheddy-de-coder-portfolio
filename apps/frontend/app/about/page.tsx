@@ -3,7 +3,9 @@ import {
   AboutHero,
   JourneyTimeline,
   LeadershipHighlights,
+  ProfessionalExperience,
   ValuesAndCapabilities,
+  CareerHighlights,
   AboutCTA,
 } from "@/components/pages/about";
 
@@ -19,7 +21,9 @@ export default function AboutPage() {
       <AboutHero />
       <JourneyTimeline />
       <LeadershipHighlights />
+      <ProfessionalExperience />
       <ValuesAndCapabilities />
+      <CareerHighlights />
       <AboutCTA />
     </>
   );

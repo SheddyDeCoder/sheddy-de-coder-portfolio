@@ -17,7 +17,7 @@ export function AboutBio() {
           <h4 className="font-display text-sm font-semibold text-primary">
             {item.question}
           </h4>
-          <p className="mt-2 font-body text-sm text-text-secondaryDark">
+          <p className="mt-2 font-body text-sm text-text-secondary">
             {item.answer}
           </p>
         </motion.div>

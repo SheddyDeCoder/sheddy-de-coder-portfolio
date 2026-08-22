@@ -14,22 +14,22 @@ export function ProjectCard({ project }: { project: Project }) {
       />
 
       <div className="flex items-center justify-between gap-2">
-        <span className="font-body text-xs uppercase tracking-wide text-text-secondaryDark">
+        <span className="font-body text-xs uppercase tracking-wide text-text-secondary">
           {project.category}
         </span>
         <ProjectStatusBadge status={project.status} />
       </div>
 
-      <h3 className="font-display text-lg font-semibold text-text-primaryDark">
+      <h3 className="font-display text-lg font-semibold text-text-primary">
         {project.name}
       </h3>
 
-      <p className="font-body text-sm text-text-secondaryDark">
+      <p className="font-body text-sm text-text-secondary">
         {project.description}
       </p>
 
-      <p className="font-body text-xs text-text-secondaryDark">
-        <span className="font-medium text-text-primaryDark">Role:</span>{" "}
+      <p className="font-body text-xs text-text-secondary">
+        <span className="font-medium text-text-primary">Role:</span>{" "}
         {project.role}
       </p>
 
@@ -37,7 +37,7 @@ export function ProjectCard({ project }: { project: Project }) {
         {project.techStack.map((tech) => (
           <span
             key={tech}
-            className="rounded-md border border-border px-2 py-1 font-code text-xs text-text-secondaryDark"
+            className="rounded-md border border-border px-2 py-1 font-code text-xs text-text-secondary"
           >
             {tech}
           </span>

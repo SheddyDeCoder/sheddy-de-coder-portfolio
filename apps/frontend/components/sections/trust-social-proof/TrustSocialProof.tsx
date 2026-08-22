@@ -11,10 +11,10 @@ export function TrustSocialProof() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-24">
       <div className="mb-12 text-center">
-        <h2 className="font-display text-2xl font-bold text-text-primaryDark md:text-4xl">
+        <h2 className="font-display text-2xl font-bold text-text-primary md:text-4xl">
           {TRUST_INTRO.heading}
         </h2>
-        <p className="mx-auto mt-3 max-w-2xl font-body text-text-secondaryDark">
+        <p className="mx-auto mt-3 max-w-2xl font-body text-text-secondary">
           {TRUST_INTRO.body}
         </p>
       </div>

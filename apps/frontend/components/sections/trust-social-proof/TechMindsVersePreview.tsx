@@ -5,10 +5,10 @@ import { TECHMINDSVERSE_PREVIEW } from "./trust-social-proof.constants";
 export function TechMindsVersePreview() {
   return (
     <div className="rounded-xl border border-border bg-surface/40 p-8 text-center">
-      <h3 className="font-display text-xl font-bold text-text-primaryDark">
+      <h3 className="font-display text-xl font-bold text-text-primary">
         {TECHMINDSVERSE_PREVIEW.heading}
       </h3>
-      <p className="mx-auto mt-3 max-w-xl font-body text-sm text-text-secondaryDark">
+      <p className="mx-auto mt-3 max-w-xl font-body text-sm text-text-secondary">
         {TECHMINDSVERSE_PREVIEW.body}
       </p>
       <p className="mt-4 font-display text-lg font-semibold text-primary">

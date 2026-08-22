@@ -13,7 +13,7 @@ export function FloatingTechCards() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.4, delay: i * 0.05, ease: "easeOut" }}
-          className="rounded-lg border border-border bg-surface/60 px-4 py-2 font-body text-sm text-text-secondaryDark backdrop-blur-sm md:hover:-translate-y-1 md:hover:text-primary md:transition-transform"
+          className="rounded-lg border border-border bg-surface/60 px-4 py-2 font-body text-sm text-text-secondary backdrop-blur-sm md:hover:-translate-y-1 md:hover:text-primary md:transition-transform"
         >
           {discipline}
         </motion.div>

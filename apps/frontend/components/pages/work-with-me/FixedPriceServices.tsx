@@ -14,7 +14,7 @@ function formatPrice(value: number | null) {
 export function FixedPriceServices() {
   return (
     <section className="mx-auto max-w-5xl px-6 py-20 md:py-28">
-      <h2 className="font-display text-2xl font-bold text-text-primaryDark md:text-3xl">
+      <h2 className="font-display text-2xl font-bold text-text-primary md:text-3xl">
         Fixed Pricing Services
       </h2>
 
@@ -28,11 +28,11 @@ export function FixedPriceServices() {
             transition={{ duration: 0.4, delay: i * 0.05, ease: "easeOut" }}
             className="rounded-lg border border-border bg-surface/40 p-6"
           >
-            <h3 className="font-display text-lg font-semibold text-text-primaryDark">
+            <h3 className="font-display text-lg font-semibold text-text-primary">
               {service.title}
             </h3>
             {service.description && (
-              <p className="mt-2 font-body text-sm text-text-secondaryDark">
+              <p className="mt-2 font-body text-sm text-text-secondary">
                 {service.description}
               </p>
             )}
@@ -40,12 +40,12 @@ export function FixedPriceServices() {
               {formatPrice(PRICING_CONFIG[service.key])}
             </p>
             {service.deliveryTime && (
-              <p className="mt-1 font-body text-xs text-text-secondaryDark">
+              <p className="mt-1 font-body text-xs text-text-secondary">
                 Delivery: {service.deliveryTime}
               </p>
             )}
             {service.idealFor && (
-              <p className="mt-1 font-body text-xs text-text-secondaryDark">
+              <p className="mt-1 font-body text-xs text-text-secondary">
                 Ideal for: {service.idealFor}
               </p>
             )}

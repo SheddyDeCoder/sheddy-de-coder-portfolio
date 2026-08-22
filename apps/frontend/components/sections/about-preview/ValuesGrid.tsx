@@ -6,7 +6,7 @@ export function ValuesGrid() {
       {CORE_VALUES.map((value) => (
         <span
           key={value}
-          className="rounded-md border border-border bg-surface/40 px-3 py-1.5 font-body text-xs text-text-secondaryDark"
+          className="rounded-md border border-border bg-surface/40 px-3 py-1.5 font-body text-xs text-text-secondary"
         >
           {value}
         </span>

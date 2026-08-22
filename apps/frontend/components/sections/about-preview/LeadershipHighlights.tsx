@@ -6,7 +6,7 @@ export function LeadershipHighlights() {
       {LEADERSHIP_HIGHLIGHTS.map((item) => (
         <li
           key={item}
-          className="font-body text-sm text-text-secondaryDark before:mr-2 before:text-primary before:content-['—']"
+          className="font-body text-sm text-text-secondary before:mr-2 before:text-primary before:content-['—']"
         >
           {item}
         </li>

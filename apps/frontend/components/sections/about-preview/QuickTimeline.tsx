@@ -17,7 +17,7 @@ export function QuickTimeline() {
           <span className="font-display text-sm font-semibold text-primary">
             {item.year}
           </span>
-          <p className="mt-1 font-body text-sm text-text-secondaryDark">
+          <p className="mt-1 font-body text-sm text-text-secondary">
             {item.description}
           </p>
         </motion.div>

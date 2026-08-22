@@ -45,7 +45,7 @@ export function OpeningIntro() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 1, ease: "easeOut" }}
-            className="mt-6 font-display text-lg tracking-wide text-text-primaryDark"
+            className="mt-6 font-display text-lg tracking-wide text-text-primary"
           >
             {INTRO_SEQUENCE.brandName}
           </motion.p>
@@ -54,7 +54,7 @@ export function OpeningIntro() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 2, ease: "easeOut" }}
-            className="mt-2 font-body text-sm text-text-secondaryDark"
+            className="mt-2 font-body text-sm text-text-secondary"
           >
             {INTRO_SEQUENCE.tagline}
           </motion.p>

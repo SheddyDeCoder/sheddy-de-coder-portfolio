@@ -11,10 +11,10 @@ export function WorkWithMePreview() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-24">
       <div className="mb-12 max-w-2xl">
-        <h2 className="font-display text-2xl font-bold text-text-primaryDark md:text-4xl">
+        <h2 className="font-display text-2xl font-bold text-text-primary md:text-4xl">
           {WORK_WITH_ME_INTRO.heading}
         </h2>
-        <p className="mt-4 font-body text-text-secondaryDark">
+        <p className="mt-4 font-body text-text-secondary">
           {WORK_WITH_ME_INTRO.body}
         </p>
       </div>
@@ -35,7 +35,7 @@ export function WorkWithMePreview() {
       </div>
 
       <div className="mt-16">
-        <h3 className="mb-6 font-display text-lg font-semibold text-text-primaryDark">
+        <h3 className="mb-6 font-display text-lg font-semibold text-text-primary">
           Why Work With Me
         </h3>
         <WhyWorkWithMe />

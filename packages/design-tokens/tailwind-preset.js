@@ -2,18 +2,19 @@ const { colors, fonts, spacing, radius, shadows } = require("./tokens");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         background: colors.background,
         surface: colors.surface,
         card: colors.card,
+        border: colors.border,
+        divider: colors.divider,
         primary: colors.primary,
         primaryHover: colors.primaryHover,
         primaryActive: colors.primaryActive,
         primarySoft: colors.primarySoft,
-        border: colors.border,
-        divider: colors.divider,
         success: colors.success,
         warning: colors.warning,
         error: colors.error,
