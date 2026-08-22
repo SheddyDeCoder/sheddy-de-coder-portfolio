@@ -20,7 +20,13 @@ import { BookACallPanel } from "@/components/shared/booking";
 export const metadata: Metadata = {
   title: "Work With Me",
   description:
-    "Technology Founder, Product Builder, and Digital Strategist — services in technology, media, branding, digital growth, and digital strategy.",
+    "Technology, product development, branding, media, and digital growth services for founders, brands, businesses, startups, and churches — remote and international collaboration welcome.",
+  alternates: { canonical: "/work-with-me" },
+  openGraph: {
+    title: "Work With Me — Technology, Product Development, and Digital Strategy Services",
+    description:
+      "Technology, product development, branding, media, and digital growth services for founders, brands, businesses, startups, and churches — remote and international collaboration welcome.",
+  },
 };
 
 export default function WorkWithMePage() {

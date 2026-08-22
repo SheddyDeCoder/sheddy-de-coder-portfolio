@@ -20,7 +20,16 @@ export async function generateMetadata({
   const { slug } = await params;
   const project = CASE_STUDIES.find((p) => p.slug === slug);
   if (!project) return {};
-  return { title: project.title, description: project.overview };
+
+  return {
+    title: project.title,
+    description: project.overview,
+    alternates: { canonical: `/projects/${project.slug}` },
+    openGraph: {
+      title: `${project.title} — Case Study`,
+      description: project.overview,
+    },
+  };
 }
 
 export default async function CaseStudyPage({

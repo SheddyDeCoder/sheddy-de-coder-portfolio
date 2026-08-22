@@ -4,14 +4,30 @@ import { Providers } from "@/providers";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { SITE_CONFIG } from "@/lib/seo/site-config";
+import { PersonJsonLd, OrganizationJsonLd, WebSiteJsonLd } from "@/lib/seo/structured-data";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_CONFIG.url),
   title: {
-    default: "Shedrack Nliam — Technology Founder & Product Builder",
-    template: "%s | SHEDDY DE CODER",
+    default: `${SITE_CONFIG.legalName} — ${SITE_CONFIG.jobTitle}`,
+    template: SITE_CONFIG.titleTemplate,
   },
-  description:
-    "Technology Founder, Product Builder & Digital Strategist — helping brands, businesses, startups and churches grow through technology, media and digital strategy. Open to remote and international collaboration.",
+  description: SITE_CONFIG.defaultDescription,
+  openGraph: {
+    type: "website",
+    siteName: SITE_CONFIG.name,
+    url: SITE_CONFIG.url,
+    title: `${SITE_CONFIG.legalName} — ${SITE_CONFIG.jobTitle}`,
+    description: SITE_CONFIG.defaultDescription,
+    images: ["/og-image.png"], // still on the asset manifest as TODO
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_CONFIG.legalName} — ${SITE_CONFIG.jobTitle}`,
+    description: SITE_CONFIG.defaultDescription,
+  },
+  alternates: { canonical: SITE_CONFIG.url },
 };
 
 export default function RootLayout({
@@ -27,6 +43,9 @@ export default function RootLayout({
     >
       
      <body className="bg-background text-text-primary font-body antialiased">
+      <PersonJsonLd />
+    <OrganizationJsonLd />
+    <WebSiteJsonLd />
      <Providers>
      <Navbar />
      {children}
