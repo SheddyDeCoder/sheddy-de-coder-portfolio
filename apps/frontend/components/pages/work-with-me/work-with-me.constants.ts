@@ -94,7 +94,7 @@ export const SERVICE_PROCESS = [
 
 export const MENTORSHIP = {
   heading: "Mentorship",
-  description: "Application-based — free or paid depending on the situation.",
+  description: "Application-based — free or paid depending on the situation. Available for mentorship and educational collaborations.",
   ctaLabel: "Apply for Mentorship",
 } as const;
 

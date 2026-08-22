@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { POSITIONING, PRIMARY_SERVICE } from "./work-with-me.constants";
 import { CURRENT_AVAILABILITY, AVAILABILITY_LABELS } from "./work-with-me.config";
+import { INTERNATIONAL_COLLABORATION } from "@/components/shared/availability";
 
 export function WorkWithMeHero() {
   return (
@@ -32,6 +33,14 @@ export function WorkWithMeHero() {
         className="mx-auto mt-6 max-w-2xl font-body text-base text-text-secondary md:text-lg"
       >
         {POSITIONING.body}
+      </motion.p>
+       <motion.p
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
+        className="mx-auto mt-4 max-w-2xl font-body text-sm text-text-secondary"
+      >
+        {INTERNATIONAL_COLLABORATION.body}
       </motion.p>
 
       <motion.p

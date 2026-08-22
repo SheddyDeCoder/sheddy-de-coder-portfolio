@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SocialConnection } from "@/components/sections/latest-updates-cta";
+import { GLOBAL_IDENTITY_LINE } from "@/components/shared/availability";
 
 const QUICK_LINKS = [
   { label: "About", href: "/about" },
@@ -19,6 +20,7 @@ export function Footer() {
         <p className="font-display text-sm font-semibold text-text-primary">
           SHEDDY DE CODER
         </p>
+         <p className="font-body text-xs text-text-secondary">{GLOBAL_IDENTITY_LINE}</p>
 
         <nav className="flex flex-wrap justify-center gap-6">
           {QUICK_LINKS.map((link) => (

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | SHEDDY DE CODER",
   },
   description:
-    "I help founders, businesses, brands, and startups establish a strong online presence, build meaningful digital products, and scale through technology, design, and digital innovation.",
+    "Technology Founder, Product Builder & Digital Strategist — helping brands, businesses, startups and churches grow through technology, media and digital strategy. Open to remote and international collaboration.",
 };
 
 export default function RootLayout({

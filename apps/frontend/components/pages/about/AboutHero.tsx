@@ -4,6 +4,8 @@ import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ABOUT_HERO } from "./about.constants";
+import { GLOBAL_IDENTITY_LINE } from "@/components/shared/availability";
+import { GlobalAvailabilityBlock } from "@/components/shared/availability";
 
 const QUESTIONS = [
   ABOUT_HERO.whoAmI,
@@ -61,6 +63,12 @@ export function AboutHero() {
         >
           {ABOUT_HERO.philosophyQuote}
         </motion.p>
+          <p className="mt-8 font-body text-sm font-medium text-primary">
+          {GLOBAL_IDENTITY_LINE}
+        </p>
+        <div className="mt-6">
+          <GlobalAvailabilityBlock />
+        </div>
       </div>
     </section>
   );
