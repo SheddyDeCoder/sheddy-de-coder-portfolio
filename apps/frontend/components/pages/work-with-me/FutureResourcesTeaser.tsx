@@ -6,9 +6,6 @@ import { FUTURE_RESOURCES } from "./work-with-me.constants";
 export function FutureResourcesTeaser() {
   return (
     <section className="mx-auto max-w-4xl px-6 py-20 text-center md:py-28">
-      <span className="rounded-full border border-border px-3 py-1 font-body text-xs text-text-secondary">
-        Coming Soon
-      </span>
       <h2 className="mt-4 font-display text-2xl font-bold text-text-primary md:text-3xl">
         Free Resources
       </h2>

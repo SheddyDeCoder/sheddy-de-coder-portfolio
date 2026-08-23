@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/techmindsverse",
     "/work-with-me",
     "/contact",
+    "/blog",
   ].map((path) => ({
     url: `${SITE_CONFIG.url}${path}`,
     lastModified: new Date(),
@@ -19,6 +20,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${SITE_CONFIG.url}/projects/${project.slug}`,
     lastModified: new Date(),
   }));
+
+  
 
   return [...staticRoutes, ...projectRoutes];
 }

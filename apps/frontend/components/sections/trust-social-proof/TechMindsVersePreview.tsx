@@ -20,11 +20,13 @@ export function TechMindsVersePreview() {
             {TECHMINDSVERSE_PREVIEW.joinCta.label}
           </Link>
         </Button>
+        {TECHMINDSVERSE_PREVIEW.visitCta.href ? (
         <Button asChild variant="outline">
           <Link href={TECHMINDSVERSE_PREVIEW.visitCta.href}>
             {TECHMINDSVERSE_PREVIEW.visitCta.label}
           </Link>
         </Button>
+        ) : null}
       </div>
     </div>
   );
