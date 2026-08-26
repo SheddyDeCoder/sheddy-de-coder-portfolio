@@ -1,0 +1,5 @@
+[33m0ea41d9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m chore: fully regenerate lockfile from scratch
+[33m272eb59[m feat(blog): build content-hub-ready blog frontend; fix: remove remaining Coming Soon language
+[33m70c5332[m feat(seo): add structured data, sitemap, robots, and per-page metadata
+[33m9bfffb3[m feat(positioning): integrate global/remote/relocation availability across About, Work With Me, Contact, Footer
+[33m8ab676f[m feat(contact): build Contact page; refactor Book a Call into shared configfix: create missing shared/booking module and work-with-me page components
