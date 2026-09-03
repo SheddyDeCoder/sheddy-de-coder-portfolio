@@ -6,6 +6,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { SITE_CONFIG } from "@/lib/seo/site-config";
 import { PersonJsonLd, OrganizationJsonLd, WebSiteJsonLd } from "@/lib/seo/structured-data";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
@@ -49,6 +50,7 @@ export default function RootLayout({
      <Providers>
      <Navbar />
      {children}
+     <Analytics />
      <Footer />
     </Providers>
     </body>

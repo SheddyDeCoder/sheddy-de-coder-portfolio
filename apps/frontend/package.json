@@ -12,6 +12,7 @@
     "@sheddy/design-tokens": "workspace:^",
     "@sheddy/ui": "workspace:^",
     "@tanstack/react-query": "^5.101.4",
+    "@vercel/analytics": "^2.0.1",
     "framer-motion": "^13.1.0",
     "lucide-react": "^0.383.0",
     "next": "16.3.0",
