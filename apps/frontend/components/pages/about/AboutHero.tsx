@@ -34,7 +34,6 @@ export function AboutHero() {
         <p className="font-body text-sm uppercase tracking-wide text-primary">
           {ABOUT_HERO.eyebrow}
         </p>
-
         <div className="mt-6 space-y-10">
           {QUESTIONS.map((q, i) => (
             <motion.div

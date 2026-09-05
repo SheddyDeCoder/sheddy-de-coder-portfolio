@@ -16,12 +16,13 @@ import {
 export function AboutPreview() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-24">
-      <div className="flex flex-col-reverse items-center gap-12 md:flex-row md:items-start">
-        <div className="relative aspect-[3/4] w-full max-w-sm flex-shrink-0">
+      <div className="flex flex-col gap-12 md:flex-row md:items-start">
+        <div className="relative aspect-[3/4] w-full max-w-sm flex-shrink-0 md:sticky md:top-24">
           <Image
             src={ABOUT_PORTRAIT.src}
             alt={ABOUT_PORTRAIT.alt}
             fill
+            sizes="(max-width: 768px) 100vw, 384px"
             className="rounded-xl object-cover"
           />
         </div>
