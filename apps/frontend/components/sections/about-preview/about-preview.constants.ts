@@ -145,3 +145,6 @@ export const PERSONAL_IMPACT: { label: string; value: string | number }[] = [
   { label: "Workshops & Programs Attended", value: "5+" },
   { label: "Public Talks", value: 1 },
 ];
+
+export const DECODER_LINE =
+  "\"De Coder\" is more than a name — I decode problems, ideas and complexity, then turn them into practical solutions using technology and media.";

@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "@sheddy/ui";
 import { PhilosophyQuote } from "./PhilosophyQuote";
 import { PersonalImpact } from "./PersonalImpact";
-import { ABOUT_INTRO, ABOUT_PORTRAIT } from "./about-preview.constants";
+import { ABOUT_INTRO, ABOUT_PORTRAIT, DECODER_LINE } from "./about-preview.constants";
 
 export function AboutPreview() {
   return (
@@ -29,6 +29,9 @@ export function AboutPreview() {
             </h2>
             <p className="mt-4 max-w-xl font-body text-sm text-text-secondary md:text-base">
               {ABOUT_INTRO.body}
+            </p>
+            <p className="mt-4 max-w-xl font-body text-sm italic text-text-secondary md:text-base">
+              {DECODER_LINE}
             </p>
           </div>
 

@@ -32,8 +32,8 @@ export const TECHMINDSVERSE_PREVIEW = {
   visitCta: { label: "Visit Official Website", href: "#" }, // real URL not yet provided
 } as const;
 
-export const LOGO_SHOWCASE: { name: string; logo: string }[] = [
-  { name: "Founder Dojo", logo: "/images/logos/founder-dojo.svg" },
-  { name: "CodeFactory Academy", logo: "/images/logos/codefactory-academy.svg" },
-  { name: "CodeFactory Innovation Hub", logo: "/images/logos/codefactory-innovation-hub.svg" },
-];
+export const LOGO_SHOWCASE = [
+  { name: "Founder Dojo", logo: "/images/logos/founder-dojo.png" },
+  { name: "CodeFactory Academy", logo: "/images/logos/codefactory.png" },
+  { name:"TechMindsVerse", logo: "/images/logos/techmindsverse.png" },
+] as const;
