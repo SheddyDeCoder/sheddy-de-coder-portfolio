@@ -1,17 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@sheddy/ui";
-import { AboutBio } from "./AboutBio";
 import { PhilosophyQuote } from "./PhilosophyQuote";
-import { QuickTimeline } from "./QuickTimeline";
-import { LeadershipHighlights } from "./LeadershipHighlights";
-import { ValuesGrid } from "./ValuesGrid";
-import { SkillsSnapshot } from "./SkillsSnapshot";
 import { PersonalImpact } from "./PersonalImpact";
-import {
-  ABOUT_INTRO,
-  ABOUT_PORTRAIT,
-} from "./about-preview.constants";
+import { ABOUT_INTRO, ABOUT_PORTRAIT } from "./about-preview.constants";
 
 export function AboutPreview() {
   return (
@@ -27,55 +19,33 @@ export function AboutPreview() {
           />
         </div>
 
-        <div className="flex flex-1 flex-col gap-10">
+        <div className="flex flex-1 flex-col gap-8">
           <div>
-            <h2 className="font-display text-2xl font-bold text-text-primary md:text-4xl">
+            <span className="font-body text-xs uppercase tracking-wide text-primary">
+              Meet the Founder
+            </span>
+            <h2 className="mt-2 font-display text-2xl font-bold text-text-primary md:text-4xl">
               {ABOUT_INTRO.heading}
             </h2>
-            <p className="mt-2 font-body text-base text-primary">
-              {ABOUT_INTRO.subheading}
-            </p>
             <p className="mt-4 max-w-xl font-body text-sm text-text-secondary md:text-base">
               {ABOUT_INTRO.body}
             </p>
           </div>
 
-          <AboutBio />
           <PhilosophyQuote />
-
-          <div>
-            <h3 className="mb-4 font-display text-lg font-semibold text-text-primary">
-              Journey
-            </h3>
-            <QuickTimeline />
-          </div>
-
-          <div>
-            <h3 className="mb-4 font-display text-lg font-semibold text-text-primary">
-              Leadership
-            </h3>
-            <LeadershipHighlights />
-          </div>
-
-          <div>
-            <h3 className="mb-4 font-display text-lg font-semibold text-text-primary">
-              Values
-            </h3>
-            <ValuesGrid />
-          </div>
-
-          <div>
-            <h3 className="mb-4 font-display text-lg font-semibold text-text-primary">
-              Skills
-            </h3>
-            <SkillsSnapshot />
-          </div>
-
           <PersonalImpact />
 
-          <Button asChild className="self-start">
-            <Link href={ABOUT_INTRO.cta.href}>{ABOUT_INTRO.cta.label}</Link>
-          </Button>
+          <div className="flex flex-wrap items-center gap-4">
+            <Button asChild>
+              <Link href="/about">Read My Full Story</Link>
+            </Button>
+            <Link
+              href={ABOUT_INTRO.cta.href}
+              className="font-body text-sm text-text-secondary underline underline-offset-4 hover:text-primary"
+            >
+              {ABOUT_INTRO.cta.label}
+            </Link>
+          </div>
         </div>
       </div>
     </section>

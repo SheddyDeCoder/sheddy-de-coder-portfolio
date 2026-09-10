@@ -36,7 +36,6 @@ export default function HomePage() {
       <BlogPreview />
       <UpcomingEvents />
       <NewsletterSignup />
-      <SocialConnection />
       <FinalCta />
     </>
   );
