@@ -29,7 +29,7 @@ export const FINAL_CTA = {
   primaryCta: { label: "Book a Call", href: "/contact" },
   secondaryCta: { label: "Hire Me", href: "/contact" },
   tertiaryActions: [
-    { label: "Download CV", href: "/cv" },
+    { label: "Download CV", href: null }, // handled specially — see FinalCta.tsx
     { label: "Join TechMindsVerse", href: "/techmindsverse" },
     { label: "Request Mentorship", href: "/contact" },
     { label: "View Projects", href: "/projects" },

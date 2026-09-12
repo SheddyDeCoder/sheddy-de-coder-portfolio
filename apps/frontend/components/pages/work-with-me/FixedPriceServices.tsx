@@ -4,11 +4,16 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@sheddy/ui";
 import { FIXED_PRICE_SERVICES } from "./work-with-me.constants";
-import { PRICING_CONFIG } from "./work-with-me.config";
+import { PRICING_CONFIG, type PriceValue } from "./work-with-me.config";
 
-function formatPrice(value: number | null) {
-  if (value === null) return "Starting From — Contact for Pricing";
-  return `Starting From ₦${value.toLocaleString()}`;
+function formatPrice(value: PriceValue) {
+  if (value.usd === null && value.ngn === null) {
+    return "Starting From — Contact for Pricing";
+  }
+  const parts: string[] = [];
+  if (value.usd !== null) parts.push(`$${value.usd.toLocaleString()}+`);
+  if (value.ngn !== null) parts.push(`₦${value.ngn.toLocaleString()}+`);
+  return `Starting From ${parts.join(" / ")}`;
 }
 
 export function FixedPriceServices() {
@@ -55,6 +60,10 @@ export function FixedPriceServices() {
           </motion.div>
         ))}
       </div>
+
+      <p className="mt-6 text-center font-body text-xs text-text-secondary">
+        Final pricing depends on scope, complexity, features, timeline, and project requirements.
+      </p>
     </section>
   );
 }

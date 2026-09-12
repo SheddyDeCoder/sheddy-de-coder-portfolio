@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Calendar, FolderOpen, Download, Users, Linkedin } from "lucide-react";
 import { QUICK_ACTIONS } from "./opening-sequence.constants";
+import { CVSelector } from "@/components/shared/cv/CVSelector";
 
 const ICONS: Record<string, React.ComponentType<{ className?: string }>> = {
   "Book a Call": Calendar,
@@ -26,6 +27,8 @@ export function QuickActionPanel() {
   }, []);
 
   const actions = QUICK_ACTIONS.filter((a) => a.href !== null);
+  const pillClass =
+    "flex items-center gap-2 rounded-full border border-border bg-surface/90 px-4 py-2 font-body text-sm text-text-secondary backdrop-blur-sm hover:text-primary";
 
   return (
     <motion.div
@@ -37,6 +40,8 @@ export function QuickActionPanel() {
         {expanded &&
           actions.map((action, i) => {
             const Icon = ICONS[action.label];
+            const isCV = action.label === "Download CV";
+
             return (
               <motion.div
                 key={action.label}
@@ -45,13 +50,17 @@ export function QuickActionPanel() {
                 exit={{ opacity: 0, x: 12 }}
                 transition={{ duration: 0.2, delay: i * 0.03 }}
               >
-                <Link
-                  href={action.href as string}
-                  className="flex items-center gap-2 rounded-full border border-border bg-surface/90 px-4 py-2 font-body text-sm text-text-secondary backdrop-blur-sm hover:text-primary"
-                >
-                  {Icon && <Icon className="h-4 w-4" />}
-                  {action.label}
-                </Link>
+                {isCV ? (
+                  <div className={pillClass}>
+                    {Icon && <Icon className="h-4 w-4" />}
+                    <CVSelector />
+                  </div>
+                ) : (
+                  <Link href={action.href as string} className={pillClass}>
+                    {Icon && <Icon className="h-4 w-4" />}
+                    {action.label}
+                  </Link>
+                )}
               </motion.div>
             );
           })}

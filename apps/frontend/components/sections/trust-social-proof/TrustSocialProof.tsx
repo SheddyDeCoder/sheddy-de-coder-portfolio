@@ -21,27 +21,12 @@ export function TrustSocialProof() {
 
       <TrustIndicators />
 
-      <div className="mt-16">
+      <div className="mt-16 space-y-16">
         <RecommendationsList />
-      </div>
-
-      <div className="mt-16">
         <RecommendationForm />
-      </div>
-
-      <div className="mt-20">
         <CommunityImpact />
-      </div>
-
-      <div className="mt-16">
         <SpeakingHighlights />
-      </div>
-
-      <div className="mt-16">
         <TechMindsVersePreview />
-      </div>
-
-      <div className="mt-16">
         <LogoShowcase />
       </div>
     </section>

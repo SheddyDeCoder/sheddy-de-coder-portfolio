@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@sheddy/ui";
+import { CVSelector } from "@/components/shared/cv/CVSelector";
 import { FINAL_CTA, CLOSING_BRAND_LINE } from "./latest-updates-cta.constants";
 
 export function FinalCta() {
@@ -26,15 +27,21 @@ export function FinalCta() {
       </div>
 
       <div className="mt-6 flex flex-wrap justify-center gap-4">
-        {FINAL_CTA.tertiaryActions.map((action) => (
-          <Link
-            key={action.label}
-            href={action.href}
-            className="font-body text-sm text-text-secondary underline underline-offset-4 hover:text-primary"
-          >
-            {action.label}
-          </Link>
-        ))}
+        {FINAL_CTA.tertiaryActions.map((action) =>
+          action.href === null ? (
+            <CVSelector
+              key={action.label}
+            />
+          ) : (
+            <Link
+              key={action.label}
+              href={action.href}
+              className="font-body text-sm text-text-secondary underline underline-offset-4 hover:text-primary"
+            >
+              {action.label}
+            </Link>
+          )
+        )}
       </div>
 
       <p className="mt-16 font-display text-sm tracking-wide text-text-secondary">
