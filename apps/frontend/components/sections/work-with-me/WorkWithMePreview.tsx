@@ -18,8 +18,7 @@ export function WorkWithMePreview() {
           {WORK_WITH_ME_INTRO.body}
         </p>
       </div>
-
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 items-start">
         <FeaturedService />
         {SERVICES.filter((s) => s !== "Startup Product Development").map(
           (title) => (

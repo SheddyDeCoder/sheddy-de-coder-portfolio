@@ -1,8 +1,15 @@
 import Link from "next/link";
-import { PRICING_PREVIEW } from "./work-with-me.constants";
+import { FIXED_PRICE_SERVICES } from "@/components/pages/work-with-me/work-with-me.constants";
+import { PRICING_CONFIG } from "@/components/pages/work-with-me/work-with-me.config";
 
 export function PricingPreview() {
-  const items = PRICING_PREVIEW.filter((item) => item.value !== null);
+  const items = FIXED_PRICE_SERVICES
+    .map((service) => ({
+      title: service.title,
+      price: PRICING_CONFIG[service.key],
+    }))
+    .filter((item) => item.price.usd !== null || item.price.ngn !== null);
+
   if (items.length === 0) return null;
 
   return (
@@ -13,11 +20,15 @@ export function PricingPreview() {
       <ul className="flex flex-col gap-2">
         {items.map((item) => (
           <li
-            key={item.service}
+            key={item.title}
             className="flex justify-between font-body text-sm text-text-secondary"
           >
-            <span>{item.service}</span>
-            <span className="text-primary">{item.value}</span>
+            <span>{item.title}</span>
+            <span className="text-primary">
+              {item.price.usd !== null && `$${item.price.usd.toLocaleString()}+`}
+              {item.price.usd !== null && item.price.ngn !== null && " / "}
+              {item.price.ngn !== null && `₦${item.price.ngn.toLocaleString()}+`}
+            </span>
           </li>
         ))}
       </ul>
