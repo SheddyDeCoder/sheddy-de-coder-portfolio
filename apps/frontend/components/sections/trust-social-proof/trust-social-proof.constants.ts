@@ -28,7 +28,7 @@ export const TECHMINDSVERSE_PREVIEW = {
   heading: "Building The Next Generation Of Technology Leaders",
   body: "TechMindsVerse is a growing technology community dedicated to learning, collaboration, innovation and building meaningful digital solutions.",
   memberCount: 105,
-  joinCta: { label: "Join Community", href: "/techmindsverse" },
+  joinCta: { label: "Join Community", href: "https://chat.whatsapp.com/GaIXQOrgY8W4VYAYYUsApH" },
   visitCta: { label: "Visit Official Website", href: "#" }, // real URL not yet provided
 } as const;
 

@@ -7,7 +7,7 @@ const QUICK_LINKS = [
   { label: "Projects", href: "/projects" },
   { label: "Work With Me", href: "/work-with-me" },
   { label: "Blog", href: "/blog" },
-  { label: "TechMindsVerse", href: "/techmindsverse" },
+  { label: "TechMindsVerse", href: "https://chat.whatsapp.com/GaIXQOrgY8W4VYAYYUsApH" },
   { label: "Contact", href: "/contact" },
 ];
 

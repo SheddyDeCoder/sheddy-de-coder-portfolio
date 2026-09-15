@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { Button } from "@sheddy/ui";
+import { BOOKING_LINKS } from "@/components/shared/booking";
+
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -60,9 +62,15 @@ export function Navbar() {
             </button>
           )}
 
-          <Button asChild size="sm" className="hidden md:inline-flex">
-            <Link href="/contact">Book a Call</Link>
-          </Button>
+         {BOOKING_LINKS.scheduler ? (
+  <a href={BOOKING_LINKS.scheduler} target="_blank" rel="noopener noreferrer">
+    <Button size="lg">Book a Call</Button>
+  </a>
+) : (
+  <Button size="lg" asChild>
+    <Link href="/contact">Book a Call</Link>
+  </Button>
+)}
 
           <button
             onClick={() => setMobileOpen((o) => !o)}

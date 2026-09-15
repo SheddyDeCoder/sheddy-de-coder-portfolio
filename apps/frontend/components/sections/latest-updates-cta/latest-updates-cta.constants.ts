@@ -26,11 +26,11 @@ export const SOCIAL_LINKS: import("./latest-updates-cta.types").SocialLink[] = [
 export const FINAL_CTA = {
   heading: "Let's Build Something Meaningful Together.",
   body: "Whether you're building a startup, strengthening your brand, launching a digital product or looking for a technology partner, I'd love to work with you.",
-  primaryCta: { label: "Book a Call", href: "/contact" },
+  primaryCta: { label: "Book a Call", href: "https://calendly.com/sheddydecoder" },
   secondaryCta: { label: "Hire Me", href: "/contact" },
   tertiaryActions: [
     { label: "Download CV", href: null }, // handled specially — see FinalCta.tsx
-    { label: "Join TechMindsVerse", href: "/techmindsverse" },
+    { label: "Join TechMindsVerse", href: "https://chat.whatsapp.com/GaIXQOrgY8W4VYAYYUsApH" },
     { label: "Request Mentorship", href: "/contact" },
     { label: "View Projects", href: "/projects" },
   ],

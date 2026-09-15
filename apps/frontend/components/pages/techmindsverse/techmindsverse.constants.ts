@@ -35,6 +35,6 @@ export const TMV_COMMUNITY = {
 
 export const TMV_CTA = {
   joinLabel: "Join Community",
-  joinHref: "/contact",
+  joinHref: "https://chat.whatsapp.com/GaIXQOrgY8W4VYAYYUsApH",
   visitLabel: "Visit Official Website",
 } as const;

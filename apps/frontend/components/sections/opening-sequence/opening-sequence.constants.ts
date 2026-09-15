@@ -20,9 +20,9 @@ export const OPENING_SCENE_PORTRAIT = {
 } as const;
 
 export const QUICK_ACTIONS = [
-  { label: "Book a Call", href: "/contact" },
+  { label: "Book a Call", href: "https://calendly.com/sheddydecoder" },
   { label: "View Projects", href: "/projects" },
   { label: "Download CV", href: "/cv.pdf" },
-  { label: "Join TechMindsVerse", href: "/techmindsverse" },
+  { label: "Join TechMindsVerse", href: "https://chat.whatsapp.com/GaIXQOrgY8W4VYAYYUsApH" },
   { label: "Follow on LinkedIn", href: "https://www.linkedin.com/in/shedrack-nliam-856980309" },
 ] as const;

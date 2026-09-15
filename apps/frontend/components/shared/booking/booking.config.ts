@@ -12,13 +12,13 @@ export const AVAILABILITY_LABELS: Record<AvailabilityStatus, string> = {
 };
 
 export const BOOKING_LINKS: {
-  scheduler: string | null;
-  whatsapp: string | null;
+  scheduler: string;
+  whatsapp: string;
   contactForm: string | null;
 } = {
-  scheduler: null,
-  whatsapp: null,
-  contactForm: null,
+  scheduler: "https://calendly.com/sheddydecoder",
+  whatsapp: "whatsapp.shedracknliam.com.ng",
+  contactForm: "./contact",
 };
 
 export const CONTACT_EMAIL: string | null = null;

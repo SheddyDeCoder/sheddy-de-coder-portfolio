@@ -1,9 +1,56 @@
 "use client";
 
+import { useState } from "react";
+
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/mrpbzgky";
+
+type Status = "idle" | "submitting" | "success" | "error";
+
 export function ContactForm() {
+  const [status, setStatus] = useState<Status>("idle");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (status === "submitting") return; // prevent duplicate submissions
+
+    setStatus("submitting");
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  if (status === "success") {
+    return (
+      <section className="mx-auto max-w-xl px-6 py-10 text-center">
+        <h2 className="font-display text-lg font-semibold text-text-primary">
+          Message sent.
+        </h2>
+        <p className="mt-2 font-body text-sm text-text-secondary">
+          Thanks for reaching out — I read every message and will get back to you soon.
+        </p>
+      </section>
+    );
+  }
+
   return (
     <section className="mx-auto max-w-xl px-6 py-10">
-      <form className="space-y-4" aria-disabled="true">
+      <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="contact-name" className="font-body text-sm text-text-secondary">
             Name
@@ -12,8 +59,8 @@ export function ContactForm() {
             id="contact-name"
             name="name"
             type="text"
-            disabled
-            className="mt-1 w-full rounded-md border border-border bg-surface/40 px-3 py-2 font-body text-sm text-text-primary disabled:cursor-not-allowed"
+            required
+            className="mt-1 w-full rounded-md border border-border bg-surface/40 px-3 py-2 font-body text-sm text-text-primary"
           />
         </div>
         <div>
@@ -24,8 +71,8 @@ export function ContactForm() {
             id="contact-email"
             name="email"
             type="email"
-            disabled
-            className="mt-1 w-full rounded-md border border-border bg-surface/40 px-3 py-2 font-body text-sm text-text-primary disabled:cursor-not-allowed"
+            required
+            className="mt-1 w-full rounded-md border border-border bg-surface/40 px-3 py-2 font-body text-sm text-text-primary"
           />
         </div>
         <div>
@@ -36,20 +83,24 @@ export function ContactForm() {
             id="contact-message"
             name="message"
             rows={4}
-            disabled
-            className="mt-1 w-full rounded-md border border-border bg-surface/40 px-3 py-2 font-body text-sm text-text-primary disabled:cursor-not-allowed"
+            required
+            className="mt-1 w-full rounded-md border border-border bg-surface/40 px-3 py-2 font-body text-sm text-text-primary"
           />
         </div>
+
+        {status === "error" && (
+          <p className="font-body text-xs text-red-500">
+            Something went wrong sending your message — please try again, or reach out on social in the meantime.
+          </p>
+        )}
+
         <button
           type="submit"
-          disabled
-          className="w-full cursor-not-allowed rounded-full border border-border px-6 py-3 font-body text-sm text-text-secondary opacity-60"
+          disabled={status === "submitting"}
+          className="w-full rounded-full border border-primary bg-primary px-6 py-3 font-body text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
         >
-          Send Message
+          {status === "submitting" ? "Sending..." : "Send Message"}
         </button>
-        <p className="text-center font-body text-xs text-text-secondary">
-          This form isn't connected to email delivery yet — use Book a Call below or reach out on social in the meantime.
-        </p>
       </form>
     </section>
   );

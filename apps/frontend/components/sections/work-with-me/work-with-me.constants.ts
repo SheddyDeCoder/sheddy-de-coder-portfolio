@@ -1,7 +1,7 @@
 export const WORK_WITH_ME_INTRO = {
   heading: "Let's Build Something Meaningful Together",
   body: "Whether you're launching a startup, building your online presence, designing a digital product, or looking for a technology partner, I help transform ideas into meaningful digital experiences.",
-  primaryCta: { label: "Book a Call", href: "/contact" },
+  primaryCta: { label: "Book a Call", href: "https://calendly.com/sheddydecoder" },
 } as const;
 
 export const SERVICES: string[] = [
@@ -28,13 +28,13 @@ export const FEATURED_SERVICE = {
 export const SPEAKING_PREVIEW = {
   title: "Technology Talks & Speaking",
   body: "Available for conferences, schools, universities, startups, innovation hubs and community events.",
-  cta: { label: "Invite Me to Speak", href: "/contact" },
+  cta: { label: "Invite Me to Speak", href: "https://calendly.com/sheddydecoder" },
 } as const;
 
 export const MENTORSHIP_PREVIEW = {
   description:
     "Guiding aspiring developers, founders and technology enthusiasts through practical learning, product thinking and career growth.",
-  cta: { label: "Request Mentorship", href: "/contact" },
+  cta: { label: "Request Mentorship", href: "https://calendly.com/sheddydecoder" },
 } as const;
 
 export const BRANDING_SERVICE = {
