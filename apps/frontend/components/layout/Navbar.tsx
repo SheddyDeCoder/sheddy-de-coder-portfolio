@@ -86,23 +86,38 @@ export function Navbar() {
         </div>
       </div>
 
-      {mobileOpen && (
-        <nav className="flex flex-col gap-4 border-t border-border px-6 py-4 md:hidden">
-          {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="font-body text-sm text-text-secondary hover:text-primary"
-            >
-              {link.label}
-            </Link>
-          ))}
-          <Button asChild size="sm" className="mt-2">
-            <Link href="/contact">Book a Call</Link>
-          </Button>
-        </nav>
-      )}
+     {mobileOpen && (
+  <nav className="flex flex-col gap-4 border-t border-border px-6 py-4 md:hidden">
+    {NAV_LINKS.map((link) => (
+      <Link
+        key={link.href}
+        href={link.href}
+        onClick={() => setMobileOpen(false)}
+        className="font-body text-sm text-text-secondary hover:text-primary"
+      >
+        {link.label}
+      </Link>
+    ))}
+    {BOOKING_LINKS.scheduler ? (
+      <a
+        href={BOOKING_LINKS.scheduler}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => setMobileOpen(false)}
+      >
+        <Button size="sm" className="mt-2 w-full">
+          Book a Call
+        </Button>
+      </a>
+    ) : (
+      <Button asChild size="sm" className="mt-2 w-full">
+        <Link href="/contact" onClick={() => setMobileOpen(false)}>
+          Book a Call
+        </Link>
+      </Button>
+    )}
+  </nav>
+)}
     </header>
   );
 }
