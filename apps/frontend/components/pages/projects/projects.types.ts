@@ -41,6 +41,7 @@ export interface CaseStudy {
   deployment?: string | null;
   documentation?: string[];
   relatedSlugs?: string[];
+  gallery?: GalleryImage[];
 }
 
 export interface LearningProject {
@@ -48,4 +49,10 @@ export interface LearningProject {
   purpose: string[];
   integrations?: string[];
   repository: string | null;
+}
+
+export interface GalleryImage {
+  src: string;
+  alt: string;
+  caption?: string;
 }

@@ -7,6 +7,7 @@ import {
   CaseStudyList,
   CaseStudySidebar,
 } from "@/components/pages/projects";
+import { CaseStudyGallery } from "@/components/pages/projects/case-study/CaseStudyGallery";
 
 export function generateStaticParams() {
   return CASE_STUDIES.map((p) => ({ slug: p.slug }));
@@ -60,6 +61,7 @@ export default async function CaseStudyPage({
       <CaseStudyList title="Roadmap" items={project.roadmap} />
       <CaseStudyList title="Target Audience" items={project.targetAudience} />
       <CaseStudySidebar project={project} />
+      <CaseStudyGallery images={project.gallery} />
     </>
   );
 }

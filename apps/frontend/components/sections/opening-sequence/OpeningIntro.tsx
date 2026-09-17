@@ -37,7 +37,12 @@ export function OpeningIntro() {
             transition={{ duration: 1, ease: "easeOut" }}
             className="h-16 w-16"
           >
-            {/* Reserved: brand logo mark. Real asset not yet provided. */}
+           {/* eslint-disable-next-line @next/next/no-img-element */}
+         <img
+          src="/images/branding/logo-mark.png"
+          alt="SHEDDY DE CODER"
+          className="h-16 w-16 object-contain"
+          />
           </motion.span>
 
           <motion.p
