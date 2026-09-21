@@ -81,6 +81,9 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Frontend Contributor",
       "Product Strategy",
     ],
+    gallery: [
+  { src: "/images/projects/p2p-pay/platform-ui.webp", alt: "P2P Pay mock platform interface" },
+],
     isRealProduct: true,
     overview:
       "P2P Pay is a peer-to-peer cryptocurrency exchange platform being developed as a real startup. The version shown here is a functional mock application built to validate the product idea, demonstrate technical capability, and support future fundraising and product development. The production version — including blockchain implementation — is currently under market research and technical planning.",
@@ -125,6 +128,10 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: "featured",
     status: "In Progress",
     role: ["Founder", "Product Designer", "Frontend Developer", "System Architect"],
+    gallery: [
+  { src: "/images/projects/techmindsverse-os/client-dashboard.webp", alt: "TechMindsVerse OS Client Dashboard" },
+  { src: "/images/projects/techmindsverse-os/academy.webp", alt: "TechMindsVerse OS Academy module" },
+],
     isRealProduct: true,
     overview:
       "TechMindsVerse OS is the flagship platform of TechMindsVerse. It was inspired by real problems experienced while working with clients — many wanted visibility into how their projects were progressing rather than waiting until completion. TechMindsVerse OS is designed to provide transparency, collaboration, and management across the whole TechMindsVerse ecosystem.",
@@ -192,6 +199,10 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: "startup-collaboration",
     industry: "Logistics / E-commerce Enablement",
     role: ["Frontend Developer"],
+    gallery: [
+      { src: "/images/projects/growthgia/landing-page.webp", alt: "GrowthGia Landing Page" },
+      { src: "/images/projects/growthgia/blog-page.webp", alt: "GrowthGia Blog Page" },
+    ],
     isRealProduct: true,
     overview:
       "GrowthGia is a logistics startup focused on helping businesses sell products online through digital storefronts and unique links that simplify selling. This case study focuses on my contribution as a frontend developer, not GrowthGia's full business model — visit the official platform to learn more about GrowthGia itself.",
@@ -213,6 +224,10 @@ export const CASE_STUDIES: CaseStudy[] = [
     category: "client",
     status: "Completed",
     role: ["Frontend Developer"],
+    gallery: [
+      { src: "/images/projects/kenlight-mercy/portfolio-home.webp", alt: "Kenlight Mercy Portfolio Home" },
+      { src: "/images/projects/kenlight-mercy/portfolio-about.webp", alt: "Kenlight Mercy Portfolio About" },
+    ],
     isRealProduct: true,
     overview:
       "A professional portfolio website built for a client — Kenlight Mercy. This project demonstrates the ability to understand client requirements and deliver a responsive, production-ready website. Unlike the founder-led products above, this was a client deliverable focused on performance, responsiveness, and personal branding.",
