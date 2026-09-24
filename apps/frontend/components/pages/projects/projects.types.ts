@@ -4,7 +4,7 @@ export type ProjectCategory =
   | "client"
   | "learning";
 
-export type ProjectStatus = string; // e.g. "In Progress", "Mock MVP Completed"
+export type ProjectStatus = string;
 
 export interface CoreModule {
   name: string;
@@ -17,31 +17,50 @@ export interface CaseStudy {
   category: ProjectCategory;
   industry?: string;
   status?: string;
+
   role: string[];
-  isRealProduct: boolean; // false for EIMB — an educational simulation, not a live product
+
+  isRealProduct: boolean;
+
   overview: string;
   whyBuilt?: string;
   problem?: string;
   solution?: string;
+
   team?: string;
   community?: string;
+
   contributions?: string[];
   pagesBuilt?: string[];
   coreModules?: CoreModule[];
+
   currentFeatures?: string[];
   plannedFeatures?: string[];
+
   futureVision?: string;
   challenges?: string;
   outcome?: string;
   roadmap?: string[];
   targetAudience?: string[];
+
   technologies?: string[] | null;
-  repository: { type: "public" | "private" | null; url: string | null };
+
+  repository: {
+    type: "public" | "private" | null;
+    url: string | null;
+  };
+
   liveUrl?: string | null;
+
   deployment?: string | null;
   documentation?: string[];
+
   relatedSlugs?: string[];
+
   gallery?: GalleryImage[];
+  coverImage?: string;
+  
+  
 }
 
 export interface LearningProject {

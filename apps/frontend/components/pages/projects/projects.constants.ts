@@ -26,6 +26,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       "System Architect",
       "Sole Developer",
     ],
+    coverImage: "/images/projects/eimb/cover.webp",
     isRealProduct: false,
     overview:
       "EIMB (Electronic Internet Mobile Bank) is an educational digital banking simulation built to demonstrate how modern banking systems work. It was created primarily as a learning and teaching tool — helping students, aspiring developers, and technology enthusiasts understand how digital banking platforms operate behind the scenes. It is not connected to real banking infrastructure and does not process real funds.",
@@ -64,7 +65,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Technical collaborators",
     ],
     technologies: [...CONFIRMED_STACK],
-    repository: { type: "public", url: null },
+    repository: { type: "public", url: "https://github.com/SheddyDeCoder/eimb-platform.git" },
     liveUrl: null,
     relatedSlugs: ["p2p-pay"],
   },
@@ -84,6 +85,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     gallery: [
   { src: "/images/projects/p2p-pay/platform-ui.webp", alt: "P2P Pay mock platform interface" },
 ],
+    coverImage: "/images/projects/p2p-pay/cover.webp",
     isRealProduct: true,
     overview:
       "P2P Pay is a peer-to-peer cryptocurrency exchange platform being developed as a real startup. The version shown here is a functional mock application built to validate the product idea, demonstrate technical capability, and support future fundraising and product development. The production version — including blockchain implementation — is currently under market research and technical planning.",
@@ -118,7 +120,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       "Regulatory compliance",
     ],
     technologies: [...CONFIRMED_STACK.filter((t) => t !== "Prisma")],
-    repository: { type: null, url: null },
+    repository: { type: "public", url: "https://github.com/SheddyDeCoder/P2P-Mock-Project.git" },
     liveUrl: null,
     relatedSlugs: ["eimb"],
   },
@@ -132,6 +134,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   { src: "/images/projects/techmindsverse-os/client-dashboard.webp", alt: "TechMindsVerse OS Client Dashboard" },
   { src: "/images/projects/techmindsverse-os/academy.webp", alt: "TechMindsVerse OS Academy module" },
 ],
+   coverImage: "/images/projects/techmindsverse-os/cover.webp",
     isRealProduct: true,
     overview:
       "TechMindsVerse OS is the flagship platform of TechMindsVerse. It was inspired by real problems experienced while working with clients — many wanted visibility into how their projects were progressing rather than waiting until completion. TechMindsVerse OS is designed to provide transparency, collaboration, and management across the whole TechMindsVerse ecosystem.",
@@ -163,8 +166,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     futureVision:
       "Future AI functionality is planned to make the platform more intelligent and improve communication and user experience. This is planned, not currently implemented.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
-    repository: { type: "public", url: null },
-    liveUrl: null,
+    repository: { type: "public", url: "https://github.com/Techmindsverse/techmindsverseOs.git" },
+    liveUrl: "https://techmindsverse-os.vercel.app",
     deployment: "Deployed on Vercel",
     documentation: ["README available", "Architecture documented"],
     relatedSlugs: ["pbos", "eimb"],
@@ -189,9 +192,10 @@ export const CASE_STUDIES: CaseStudy[] = [
     outcome:
       "This website — the portfolio, digital headquarters, authority platform, and source of truth you're currently browsing — is the direct result of this project.",
     documentation: ["PBOS Master Specification (PDF)"],
-    repository: { type: null, url: null },
+    repository: { type: "public", url: "https://github.com/SheddyDeCoder/sheddy-de-coder-portfolio.git" },
     liveUrl: null,
     relatedSlugs: ["techmindsverse-os"],
+    coverImage: "/images/projects/pbos/cover.webp",
   },
   {
     slug: "growthgia",
@@ -203,6 +207,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { src: "/images/projects/growthgia/landing-page.webp", alt: "GrowthGia Landing Page" },
       { src: "/images/projects/growthgia/blog-page.webp", alt: "GrowthGia Blog Page" },
     ],
+    coverImage: "/images/projects/growthgia/cover.webp",
     isRealProduct: true,
     overview:
       "GrowthGia is a logistics startup focused on helping businesses sell products online through digital storefronts and unique links that simplify selling. This case study focuses on my contribution as a frontend developer, not GrowthGia's full business model — visit the official platform to learn more about GrowthGia itself.",
@@ -215,8 +220,8 @@ export const CASE_STUDIES: CaseStudy[] = [
     outcome:
       "This project demonstrates the ability to work within an existing product, collaborate with other developers, implement designs accurately, and deliver production-ready frontend interfaces.",
     technologies: null,
-    repository: { type: null, url: null },
-    liveUrl: null,
+    repository: { type: "public", url: null },
+    liveUrl: "https://growthgia.com",
   },
   {
     slug: "kenlight-mercy",
@@ -225,15 +230,16 @@ export const CASE_STUDIES: CaseStudy[] = [
     status: "Completed",
     role: ["Frontend Developer"],
     gallery: [
-      { src: "/images/projects/kenlight-mercy/portfolio-home.webp", alt: "Kenlight Mercy Portfolio Home" },
-      { src: "/images/projects/kenlight-mercy/portfolio-about.webp", alt: "Kenlight Mercy Portfolio About" },
-    ],
+  { src: "/images/projects/kenlight-mercy-portfolio/portfolio-home.webp", alt: "Kenlight Mercy Portfolio Home" },
+  { src: "/images/projects/kenlight-mercy-portfolio/portfolio-about.webp", alt: "Kenlight Mercy Portfolio About" },
+],
+   coverImage: "/images/projects/kenlight-mercy-portfolio/cover.webp",
     isRealProduct: true,
     overview:
       "A professional portfolio website built for a client — Kenlight Mercy. This project demonstrates the ability to understand client requirements and deliver a responsive, production-ready website. Unlike the founder-led products above, this was a client deliverable focused on performance, responsiveness, and personal branding.",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    repository: { type: null, url: null },
-    liveUrl: null,
+    repository: { type: "public", url: "https://github.com/SheddyDeCoder" },
+    liveUrl: "https://www.kenlight.org/",
   },
 ];
 
@@ -241,12 +247,12 @@ export const LEARNING_PROJECTS: LearningProject[] = [
   {
     name: "Profile Generator",
     purpose: ["Practice API integration", "Learn fetching external data"],
-    repository: null,
+    repository: "https://github.com/SheddyDeCoder/profile-generator.git",
   },
   {
-    name: "Motivate (Quote Generator)",
+    name: "Daily Motiv8",
     purpose: ["Practice frontend logic", "Generate motivational quotes"],
-    repository: null,
+    repository: "https://github.com/SheddyDeCoder/Daily-Motiv8.git",
   },
   {
     name: "Personal Portfolio Website (Learning Project)",
@@ -256,17 +262,17 @@ export const LEARNING_PROJECTS: LearningProject[] = [
       "Integrate external services",
     ],
     integrations: ["Formspree", "Slider.js"],
-    repository: null,
+    repository: "https://github.com/SheddyDeCoder/Shedrack-Nliam.git",
   },
   {
     name: "DevMe",
     purpose: ["Small developer profile application", "Practice frontend development", "Showcase technology stack"],
-    repository: null,
+    repository: "https://github.com/SheddyDeCoder/DEV-ME.git",
   },
   {
     name: "Mini Blog",
     purpose: ["Practice blog architecture", "Content rendering", "Frontend development"],
-    repository: null,
+    repository: "https://github.com/SheddyDeCoder/my-blog.git",
   },
 ];
 
