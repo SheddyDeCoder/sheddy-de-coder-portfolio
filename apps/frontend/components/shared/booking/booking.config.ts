@@ -17,8 +17,8 @@ export const BOOKING_LINKS: {
   contactForm: string | null;
 } = {
   scheduler: "https://calendly.com/sheddydecoder",
-  whatsapp: "whatsapp.shedracknliam.com.ng",
+  whatsapp: "https://wa.me/2349018882761",
   contactForm: "./contact",
 };
 
-export const CONTACT_EMAIL: string | null = null;
+export const CONTACT_EMAIL: string | null = "sheddydecoder@gmail.com";

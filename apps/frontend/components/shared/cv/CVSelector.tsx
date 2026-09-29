@@ -5,10 +5,16 @@ import { createPortal } from "react-dom";
 import { Download, Eye, X } from "lucide-react";
 import { Button } from "@sheddy/ui";
 import { CV_OPTIONS } from "./cv.config";
+import { trackGAEvent } from "@/lib/analytics/gtag";
 
-export function CVSelector() {
+
+export function CVSelector({ location }: { location: string }) {
   const [open, setOpen] = useState(false);
 
+  const trackCVAction = (
+    action: "cv_view" | "cv_download",
+    cvType: string
+  ) => trackGAEvent(action, { cv_type: cvType, location });
   return (
     <>
       <Button variant="outline" size="lg" onClick={() => setOpen(true)}>
@@ -54,6 +60,7 @@ export function CVSelector() {
                             href={cv.filePath}
                             target="_blank"
                             rel="noopener noreferrer"
+                            onClick={() => trackCVAction("cv_view", cv.title)}
                             className="flex items-center gap-1 font-body text-xs font-medium text-primary underline underline-offset-4"
                           >
                             <Eye className="h-3 w-3" /> View
@@ -61,6 +68,7 @@ export function CVSelector() {
                           <a
                             href={cv.filePath}
                             download
+                            onClick={() => trackCVAction("cv_download", cv.title)}
                             className="flex items-center gap-1 font-body text-xs font-medium text-primary underline underline-offset-4"
                           >
                             <Download className="h-3 w-3" /> Download

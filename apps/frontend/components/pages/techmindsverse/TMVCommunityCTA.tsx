@@ -25,9 +25,11 @@ export function TMVCommunityCTA() {
         <Button asChild size="lg">
           <Link href={TMV_CTA.joinHref}>{TMV_CTA.joinLabel}</Link>
         </Button>
-        <Button variant="outline" size="lg" disabled aria-disabled="true">
-          {TMV_CTA.visitLabel} — Coming Soon
-        </Button>
+        {TMV_CTA.visitHref ? (
+          <Button asChild variant="outline" size="lg">
+            <Link href={TMV_CTA.visitHref}>{TMV_CTA.visitLabel}</Link>
+          </Button>
+        ) : null}
       </div>
     </section>
   );

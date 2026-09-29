@@ -53,7 +53,7 @@ export function QuickActionPanel() {
                 {isCV ? (
                   <div className={pillClass}>
                     {Icon && <Icon className="h-4 w-4" />}
-                    <CVSelector />
+                    <CVSelector location="quick_actions" />
                   </div>
                 ) : (
                   <Link href={action.href as string} className={pillClass}>

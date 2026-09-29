@@ -31,6 +31,7 @@ export function FinalCta() {
           action.href === null ? (
             <CVSelector
               key={action.label}
+              location="final_cta"
             />
           ) : (
             <Link

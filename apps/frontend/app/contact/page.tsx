@@ -19,7 +19,7 @@ export default function ContactPage() {
     <>
       <ContactHero />
       <ContactForm />
-      <BookACallPanel />
+      <BookACallPanel location="Contact page" />
       <section className="mx-auto max-w-3xl px-6 py-10 text-center">
         <h2 className="font-display text-lg font-semibold text-text-primary">
           Find Me Elsewhere

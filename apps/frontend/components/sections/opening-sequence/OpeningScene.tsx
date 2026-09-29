@@ -90,7 +90,7 @@ export function OpeningScene() {
               {OPENING_SCENE.secondaryCta.label}
             </Link>
           </Button>
-          <CVSelector />
+          <CVSelector location="opening_scene" />
         </motion.div>
       </div>
     </section>

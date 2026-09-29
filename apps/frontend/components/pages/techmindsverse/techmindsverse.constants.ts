@@ -37,4 +37,5 @@ export const TMV_CTA = {
   joinLabel: "Join Community",
   joinHref: "https://chat.whatsapp.com/GaIXQOrgY8W4VYAYYUsApH",
   visitLabel: "Visit Official Website",
+  visitHref: null as string | null, // Set to null for now, can be updated later when the website is live
 } as const;

@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { Calendar, MessageCircle, Mail } from "lucide-react";
 import { BOOKING_LINKS } from "./booking.config";
 import { SITE_CONFIG } from "@/lib/seo/site-config";
+import { trackGAEvent } from "@/lib/analytics/gtag";
 
 const OPTIONS = [
   { key: "scheduler" as const, label: "Schedule a Call", icon: Calendar },
@@ -11,14 +11,22 @@ const OPTIONS = [
   { key: "contactForm" as const, label: "Send a Message", icon: Mail },
 ];
 
-export function BookACallPanel() {
+type BookingMethod = "calendly" | "whatsapp" | "contact_form";
+
+const BOOKING_METHODS: Record<(typeof OPTIONS)[number]["key"], BookingMethod> = {
+  scheduler: "calendly",
+  whatsapp: "whatsapp",
+  contactForm: "contact_form",
+};
+
+export function BookACallPanel({ location }: { location: string }) {
   const anyLinkAvailable = Object.values(BOOKING_LINKS).some(Boolean);
 
   if (!anyLinkAvailable) {
     return (
       <section className="mx-auto max-w-2xl px-6 py-20 text-center md:py-28">
         <h2 className="font-display text-2xl font-bold text-text-primary md:text-3xl">
-          Let's Talk
+          Let&apos;s Talk
         </h2>
         <p className="mt-3 font-body text-sm text-text-secondary">
           Reach out directly on{" "}
@@ -42,18 +50,26 @@ export function BookACallPanel() {
         Book a Call
       </h2>
       <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-        {OPTIONS.filter(({ key }) => BOOKING_LINKS[key]).map(({ key, label, icon: Icon }) => (
-          <a
-            key={key}
-            href={BOOKING_LINKS[key]!}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center gap-2 rounded-full border border-primary bg-primary px-6 py-3 font-body text-sm font-semibold text-white"
-          >
-            <Icon className="h-4 w-4" />
-            {label}
-          </a>
-        ))}
+        {OPTIONS.filter(({ key }) => BOOKING_LINKS[key]).map(
+          ({ key, label, icon: Icon }) => (
+            <a
+              key={key}
+              href={BOOKING_LINKS[key]!}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() =>
+                trackGAEvent("booking_click", {
+                  method: BOOKING_METHODS[key],
+                  location,
+                })
+              }
+              className="flex items-center justify-center gap-2 rounded-full border border-primary bg-primary px-6 py-3 font-body text-sm font-semibold text-white"
+            >
+              <Icon className="h-4 w-4" />
+              {label}
+            </a>
+          )
+        )}
       </div>
     </section>
   );

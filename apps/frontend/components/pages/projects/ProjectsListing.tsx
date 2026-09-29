@@ -94,10 +94,16 @@ function ProjectLinks({ project }: { project: CaseStudy }) {
       )}
 
       {hasPrivateRepository && (
-        <span className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-1.5 text-xs text-text-secondary">
+        <a
+          href={project.repository.url!}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(event) => event.stopPropagation()}
+          className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-1.5 text-xs font-medium text-text-primary transition-colors hover:border-primary"
+        >
           <Lock className="h-3.5 w-3.5" />
           Private
-        </span>
+        </a>
       )}
     </div>
   );

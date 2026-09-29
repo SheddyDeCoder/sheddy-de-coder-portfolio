@@ -43,7 +43,7 @@ export default function WorkWithMePage() {
       <ToolsInventory />
       <MentorshipCTA />
       <FutureResourcesTeaser />
-      <BookACallPanel />
+      <BookACallPanel location="Work With Me page" />
     </>
   );
 }
