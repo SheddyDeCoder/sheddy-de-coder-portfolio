@@ -4,24 +4,49 @@ export const INTRO_SEQUENCE = {
 } as const;
 
 export const OPENING_SCENE = {
-  heading: "Technology Founder & Product Builder",
-  subheading: "Founder, TechMindsVerse",
+  eyebrow: "Technology Founder · Product Designer · Solutionist",
+
+  heading: "I Decode Complex Ideas Into Meaningful Solutions",
+
+  subheading:
+    "I work across product strategy, design, technology, and digital growth to turn ideas and real-world problems into useful solutions.",
+
   positioning:
-    "I help founders, businesses, brands, and startups establish a strong online presence, build meaningful digital products, and scale through technology, design, and digital innovation.",
-  supportingMessage: "Let's build something meaningful together.",
-  primaryCta: { label: "Book a Call", href: "https://calendly.com/sheddydecoder" },
-  secondaryCta: { label: "View Projects", href: "/projects" },
+    "From understanding the problem and shaping the product to designing, implementing, and helping it get found, I connect the pieces that turn an idea into something people can actually use.",
+
+  supportingMessage: "Decode → Simplify → Build → Grow",
+
+  primaryCta: {
+    label: "Book a Call",
+    href: "https://calendly.com/sheddydecoder",
+  },
+
+  secondaryCta: {
+    label: "Explore My Work",
+    href: "/projects",
+  },
 } as const;
 
 export const OPENING_SCENE_PORTRAIT = {
   src: "/images/hero/founder-portrait.webp",
-  alt: "Shedrack Nliam — Technology Founder & Product Builder",
+  alt: "Shedrack Nliam — Technology Founder, Product Designer and Solutionist",
 } as const;
 
 export const QUICK_ACTIONS = [
-  { label: "Book a Call", href: "https://calendly.com/sheddydecoder" },
-  { label: "View Projects", href: "/projects" },
-  { label: "Download CV", href: "/cv.pdf" },
-  { label: "Join TechMindsVerse", href: "/techmindsverse" },
-  { label: "Follow on LinkedIn", href: "https://www.linkedin.com/in/shedrack-nliam-856980309" },
+  {
+    label: "Book a Call",
+    href: "https://calendly.com/sheddydecoder",
+  },
+  {
+    label: "View Projects",
+    href: "/projects",
+  },
+  {
+    label: "Download CV",
+    href: "/cv.pdf",
+  },
+  {
+    label: "Follow on LinkedIn",
+    href: "https://www.linkedin.com/in/shedrack-nliam-856980309",
+  },
 ] as const;
