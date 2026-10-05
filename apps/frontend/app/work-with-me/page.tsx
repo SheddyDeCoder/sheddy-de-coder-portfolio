@@ -1,31 +1,25 @@
 import type { Metadata } from "next";
+
 import {
   WorkWithMeHero,
+  BuildGrowSection,
   FixedPriceServices,
-  ServiceCategoryGrid,
   ServiceProcess,
-  MentorshipCTA,
-  ToolsInventory,
-  FutureResourcesTeaser,
+  SelectedWork,
+  WhoIWorkWith,
+  SupportingCapabilities,
 } from "@/components/pages/work-with-me";
-import {
-  CUSTOM_QUOTE_SERVICES,
-  MEDIA_SERVICES,
-  CHURCH_SERVICES,
-  DIGITAL_GROWTH_SERVICES,
-  BRANDING_SERVICES,
-} from "@/components/pages/work-with-me/work-with-me.constants";
 import { BookACallPanel } from "@/components/shared/booking";
 
 export const metadata: Metadata = {
   title: "Work With Me",
   description:
-    "Technology, product development, branding, media, and digital growth services for founders, brands, businesses, startups, and churches — remote and international collaboration welcome.",
+    "Technology, product development, and digital visibility services for founders, startups, businesses, and personal brands. Based in Nigeria, open to remote collaboration worldwide.",
   alternates: { canonical: "/work-with-me" },
   openGraph: {
-    title: "Work With Me — Technology, Product Development, and Digital Strategy Services",
+    title: "Work With Me — Technology, Product Development & Digital Visibility",
     description:
-      "Technology, product development, branding, media, and digital growth services for founders, brands, businesses, startups, and churches — remote and international collaboration welcome.",
+      "Build useful digital products and improve digital visibility through product development, web development, SEO, and search visibility.",
   },
 };
 
@@ -33,16 +27,12 @@ export default function WorkWithMePage() {
   return (
     <>
       <WorkWithMeHero />
+      <BuildGrowSection />
       <FixedPriceServices />
-      <ServiceCategoryGrid title="Custom Quote Services" services={CUSTOM_QUOTE_SERVICES} />
-      <ServiceCategoryGrid title="Digital Growth" services={DIGITAL_GROWTH_SERVICES} />
-      <ServiceCategoryGrid title="Branding & Design" services={BRANDING_SERVICES} />
-      <ServiceCategoryGrid title="Media & Creative Services" services={MEDIA_SERVICES} />
-      <ServiceCategoryGrid title="Church & Ministry Solutions" services={CHURCH_SERVICES} />
       <ServiceProcess />
-      <ToolsInventory />
-      <MentorshipCTA />
-      <FutureResourcesTeaser />
+      <SelectedWork />
+      <WhoIWorkWith />
+      <SupportingCapabilities />
       <BookACallPanel location="Work With Me page" />
     </>
   );

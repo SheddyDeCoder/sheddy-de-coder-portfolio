@@ -1,0 +1,10 @@
+[33m43dc40e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m fix: correct Kenlight Mercy route slug; fix: remove fake Coming Soon placeholder on TechMindsVerse page, match homepage's conditional pattern
+[33m4c99708[m fix: correct Kenlight Mercy route slug; fix: remove fake Coming Soon placeholder on TechMindsVerse page, match homepage's conditional pattern
+[33m7638579[m feat: integrate Google Analytics 4
+[33m4fe6a43[m Add personal brand Open Graph image
+[33m89a8e79[m fix(projects): add missing coverImage field to CaseStudy type and confirmed project entries
+[33m8fb17ed[m feat(projects): wire real gallery screenshots for P2P Pay, TechMindsVerse OS, GrowthGia; fix: move Founder Dojo logo to correct path
+[33mf27eab4[m feat: add favicon, manifest, and logo mark; feat(projects): add gallery support for case-study screenshots
+[33me362871[m fix: mobile Navbar Book a Call now opens Calendly, matching desktop
+[33mc28b61c[m fix: Hero Book a Call now opens Calendly instead of Contact; fix: restore Footer TechMindsVerse internal link
+[33m09d2b8c[m added endpoint for forms, and optimized home page
