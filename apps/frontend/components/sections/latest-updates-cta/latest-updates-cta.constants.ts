@@ -23,17 +23,32 @@ export const SOCIAL_LINKS: import("./latest-updates-cta.types").SocialLink[] = [
   { platform: "YouTube", url: "https://youtube.com/@sheddy_de_coder" },
 ];
 
+
 export const FINAL_CTA = {
-  heading: "Let's Build Something Meaningful Together.",
-  body: "Whether you're building a startup, strengthening your brand, launching a digital product or looking for a technology partner, I'd love to work with you.",
-  primaryCta: { label: "Book a Call", href: "https://calendly.com/sheddydecoder" },
-  secondaryCta: { label: "Hire Me", href: "/contact" },
+  heading: "Let's Build Something Meaningful.",
+  body:
+    "Have a product to build, a brand to grow, or a workflow to simplify? Let's turn the challenge into a practical solution.",
+
+  primaryCta: {
+    label: "Book a Call",
+    href: "https://calendly.com/sheddydecoder",
+  },
+
+  secondaryCta: {
+    label: "Get in Touch",
+    href: "/contact",
+  },
+
   tertiaryActions: [
-    { label: "Download CV", href: null }, // handled specially — see FinalCta.tsx
-    { label: "Join TechMindsVerse", href: "https://chat.whatsapp.com/GaIXQOrgY8W4VYAYYUsApH" },
+    { label: "Download CV", href: null },
+    {
+      label: "Join TechMindsVerse",
+      href: "https://chat.whatsapp.com/GaIXQOrgY8W4VYAYYUsApH",
+    },
     { label: "Request Mentorship", href: "/contact" },
     { label: "View Projects", href: "/projects" },
   ],
 } as const;
+
 
 export const CLOSING_BRAND_LINE = "Building Meaningful Technology.";

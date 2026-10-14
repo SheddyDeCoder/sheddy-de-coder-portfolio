@@ -1,30 +1,30 @@
+
 export const MISSION_STATEMENT = {
-  text: "Building meaningful technology that empowers founders, businesses, brands, startups and communities to thrive in the digital world.",
+  text: "Building meaningful technology that helps founders and businesses solve real problems, strengthen digital visibility, and work smarter through automation.",
 } as const;
 
 export const FLOATING_DISCIPLINES = [
+  "Product Development",
   "Frontend Engineering",
   "Backend Development",
   "Product Strategy",
   "UI / UX Design",
-  "Brand Identity",
+  "SEO & Search Visibility",
+  "Workflow Automation",
+  "Digital Strategy",
   "Artificial Intelligence",
-  "Community Building",
-  "Leadership",
-  "Digital Innovation",
 ] as const;
 
+
 export const ECOSYSTEM_NODES = [
-  "TechMindsVerse",
-  "Products",
-  "Projects",
-  "Speaking",
-  "Mentorship",
-  "Articles",
-  "Open Source",
-  "Branding",
-  "Consulting",
+  "Startup Founders",
+  "Product Building",
+  "Academy",
+  "Community",
+  "Collaboration",
+  "Technology & Innovation",
 ] as const;
+
 
 export const SIGNATURE_METRICS = [
   { label: "Projects Built", value: null },

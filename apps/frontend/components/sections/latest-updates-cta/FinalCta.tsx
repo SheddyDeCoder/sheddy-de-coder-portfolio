@@ -1,24 +1,30 @@
+
 import Link from "next/link";
 import { Button } from "@sheddy/ui";
-import { CVSelector } from "@/components/shared/cv/CVSelector";
 import { FINAL_CTA, CLOSING_BRAND_LINE } from "./latest-updates-cta.constants";
 
 export function FinalCta() {
   return (
-    <section className="mx-auto max-w-3xl px-6 py-24 text-center">
-      <h2 className="font-display text-2xl font-bold text-text-primary md:text-4xl">
+    <section className="mx-auto max-w-3xl px-6 py-14 text-center md:py-20">
+      <h2 className="font-display text-3xl font-bold text-text-primary md:text-4xl">
         {FINAL_CTA.heading}
       </h2>
-      <p className="mx-auto mt-4 max-w-xl font-body text-text-secondary">
+
+      <p className="mx-auto mt-4 max-w-xl text-sm leading-7 text-text-secondary md:text-base">
         {FINAL_CTA.body}
       </p>
 
-      <div className="mt-8 flex flex-wrap justify-center gap-4">
+      <div className="mt-8 flex flex-wrap justify-center gap-3">
         <Button asChild size="lg">
-          <Link href={FINAL_CTA.primaryCta.href}>
+          <a
+            href={FINAL_CTA.primaryCta.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {FINAL_CTA.primaryCta.label}
-          </Link>
+          </a>
         </Button>
+
         <Button asChild variant="outline" size="lg">
           <Link href={FINAL_CTA.secondaryCta.href}>
             {FINAL_CTA.secondaryCta.label}
@@ -26,26 +32,7 @@ export function FinalCta() {
         </Button>
       </div>
 
-      <div className="mt-6 flex flex-wrap justify-center gap-4">
-        {FINAL_CTA.tertiaryActions.map((action) =>
-          action.href === null ? (
-            <CVSelector
-              key={action.label}
-              location="final_cta"
-            />
-          ) : (
-            <Link
-              key={action.label}
-              href={action.href}
-              className="font-body text-sm text-text-secondary underline underline-offset-4 hover:text-primary"
-            >
-              {action.label}
-            </Link>
-          )
-        )}
-      </div>
-
-      <p className="mt-16 font-display text-sm tracking-wide text-text-secondary">
+      <p className="mt-12 font-display text-sm tracking-wide text-text-secondary">
         {CLOSING_BRAND_LINE}
       </p>
     </section>

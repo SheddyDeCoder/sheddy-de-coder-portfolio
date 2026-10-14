@@ -1,5 +1,4 @@
 // BlogPreview.tsx
-import { div } from "framer-motion/m";
 import { FEATURED_ARTICLES } from "./latest-updates-cta.constants";
 
 export function BlogPreview() {

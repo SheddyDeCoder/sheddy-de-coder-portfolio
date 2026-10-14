@@ -1,33 +1,46 @@
+
 "use client";
 
 import { motion } from "framer-motion";
 import { MISSION_STATEMENT } from "./mission.constants";
 
-const EMPHASIZED_WORDS = [
-  "Technology",
-  "empowers",
-  "founders",
-  "innovation",
-  "communities",
+const EMPHASIZED_WORDS = new Set([
   "meaningful",
-];
+  "technology",
+  "founders",
+  "businesses",
+  "visibility",
+  "automation",
+]);
 
 export function MissionStatement() {
   const words = MISSION_STATEMENT.text.split(" ");
 
   return (
-    <section className="mx-auto flex max-w-4xl flex-col items-center px-6 py-24 text-center md:py-32">
+    <section className="mx-auto flex max-w-4xl flex-col items-center px-6 py-14 text-center md:py-20">
+      <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-primary">
+        My Mission
+      </p>
+
       <p className="font-display text-2xl leading-snug text-text-primary md:text-4xl">
         {words.map((word, i) => {
-          const clean = word.replace(/[.,]/g, "");
-          const isEmphasized = EMPHASIZED_WORDS.includes(clean);
+          const clean = word
+            .replace(/[.,]/g, "")
+            .toLowerCase();
+
+          const isEmphasized = EMPHASIZED_WORDS.has(clean);
+
           return (
             <motion.span
               key={`${word}-${i}`}
               initial={{ opacity: 0, y: 8 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.04, ease: "easeOut" }}
+              transition={{
+                duration: 0.35,
+                delay: i * 0.025,
+                ease: "easeOut",
+              }}
               className={
                 isEmphasized
                   ? "text-primary"

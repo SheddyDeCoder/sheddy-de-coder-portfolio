@@ -12,9 +12,9 @@ import { CVSelector } from "@/components/shared/cv/CVSelector";
 
 export function OpeningScene() {
   return (
-    <section className="relative overflow-hidden px-6 py-16 md:px-16 md:py-24">
-      <div className="mx-auto flex min-h-[calc(100vh-80px)] max-w-6xl items-center">
-        <div className="grid w-full items-center gap-14 md:grid-cols-[1.1fr_0.9fr] md:gap-16 lg:gap-20">
+    <section className="relative overflow-hidden px-6 py-12 md:px-16 md:py-20">
+      <div className="mx-auto flex max-w-6xl items-center">
+        <div className="grid w-full items-center gap-8 md:grid-cols-[1.1fr_0.9fr] md:gap-12 lg:gap-16">
           {/* Content */}
           <div className="order-2 flex flex-col items-start text-left md:order-1">
             <motion.p

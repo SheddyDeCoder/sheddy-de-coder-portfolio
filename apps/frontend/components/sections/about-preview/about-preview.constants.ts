@@ -1,9 +1,10 @@
 export const ABOUT_INTRO = {
   heading: "Meet The Founder",
   subheading: "Technology Founder. Product Builder. Community Leader.",
-  body:
-    "I help founders, businesses, brands, and startups establish a strong online presence, build meaningful digital products, and scale through technology, design, and digital innovation.",
-  cta: { label: "Read My Story", href: "/about" },
+  
+body:
+  "I'm a technology founder, product builder, and founder of TechMindsVerse. I combine product thinking, technology, and digital strategy to build meaningful solutions and create opportunities for people and businesses.",
+
 } as const;
 
 export const ABOUT_PORTRAIT = {

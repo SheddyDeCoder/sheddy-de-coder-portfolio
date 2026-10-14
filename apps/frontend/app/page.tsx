@@ -1,3 +1,5 @@
+
+
 import {
   OpeningIntro,
   OpeningScene,
@@ -8,22 +10,15 @@ import {
   MissionStatement,
   FloatingTechCards,
   EcosystemPreview,
-  SignatureMetrics,
 } from "@/components/sections/mission";
 
+import { BuildGrowAutomate } from "@/components/sections/build-grow-automate/BuildGrowAutomate";
 import { FeaturedProjects } from "@/components/sections/featured-projects";
-
 import { AboutPreview } from "@/components/sections/about-preview";
-
 import { WorkWithMePreview } from "@/components/sections/work-with-me";
-
 import { TrustSocialProof } from "@/components/sections/trust-social-proof";
 
 import {
-  LatestUpdatesFeed,
-  BlogPreview,
-  UpcomingEvents,
-  NewsletterSignup,
   SocialConnection,
   FinalCta,
 } from "@/components/sections/latest-updates-cta";
@@ -31,47 +26,29 @@ import {
 export default function HomePage() {
   return (
     <>
-      {/* Opening experience */}
+      {/* Identity */}
       <OpeningIntro />
-
-      {/* Primary positioning / Hero */}
       <OpeningScene />
-
-      {/* Quick access actions */}
       <QuickActionPanel />
 
-      {/* What I believe and how I approach technology */}
-      <MissionStatement />
-      <FloatingTechCards />
+      {/* Core capabilities */}
+      <BuildGrowAutomate />
 
-      {/* TechMindsVerse / ecosystem context */}
-      <EcosystemPreview />
-
-      {/* Credibility and measurable proof */}
-      <SignatureMetrics />
-
-      {/* Selected products and work */}
+      {/* Proof and credibility */}
       <FeaturedProjects />
-
-      {/* Founder context */}
-      <AboutPreview />
-
-      {/* How people can work with me */}
-      <WorkWithMePreview />
-
-      {/* Trust, experience and credibility */}
       <TrustSocialProof />
 
-      {/* Updates / knowledge / ecosystem activity */}
-      <LatestUpdatesFeed />
-      <BlogPreview />
-      <UpcomingEvents />
+      {/* Mission and founder identity */}
+      <MissionStatement />
+      <FloatingTechCards />
+      <AboutPreview />
+      <EcosystemPreview />
 
-      {/* Audience relationship / retention */}
-      <NewsletterSignup />
+      {/* Collaboration */}
+      <WorkWithMePreview />
+
+      {/* Connection and final conversion */}
       <SocialConnection />
-
-      {/* Final conversion */}
       <FinalCta />
     </>
   );

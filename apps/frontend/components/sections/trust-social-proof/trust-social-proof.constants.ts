@@ -1,17 +1,18 @@
 export const TRUST_INTRO = {
-  heading: "Trusted By People. Driven By Purpose.",
-  body: "Every project, collaboration and community experience is built on trust, professionalism and a commitment to creating meaningful results.",
+  heading: "Experience That Shapes My Work",
+  body:
+    "My approach combines hands-on product development, founder experience, professional training, and community leadership.",
 } as const;
 
 // No real recommendations submitted yet — renders nothing until provided.
 export const RECOMMENDATIONS: import("./trust-social-proof.types").Recommendation[] = [];
 
 export const TRUST_INDICATORS: string[] = [
-  "Founder of TechMindsVerse",
-  "Technology Founder",
-  "Product Builder",
-  "Mentor",
-  "Community Builder",
+  "Founder — TechMindsVerse",
+  "Founder Dojo Fellow",
+  "Google Ads Search Certified",
+  "Product Development",
+  "Community Leadership",
 ];
 
 export const COMMUNITY_IMPACT: { label: string; value: string | number }[] = [

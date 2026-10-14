@@ -4,15 +4,15 @@ export const INTRO_SEQUENCE = {
 } as const;
 
 export const OPENING_SCENE = {
-  eyebrow: "Technology Founder · Product Designer · Solutionist",
+  eyebrow: "Technology Founder · Product Builder · Solutionist",
 
   heading: "I Decode Complex Ideas Into Meaningful Solutions",
 
   subheading:
-    "I work across product strategy, design, technology, and digital growth to turn ideas and real-world problems into useful solutions.",
+    "I help founders, executives, and businesses build useful digital products, strengthen their online presence, and automate repetitive work.",
 
   positioning:
-    "From understanding the problem and shaping the product to designing, implementing, and helping it get found, I connect the pieces that turn an idea into something people can actually use.",
+    "From websites and product development to SEO, digital visibility, and practical automation, I connect technology with real business goals.",
 
   supportingMessage: "Decode → Simplify → Build → Grow",
 
@@ -26,6 +26,7 @@ export const OPENING_SCENE = {
     href: "/projects",
   },
 } as const;
+
 
 export const OPENING_SCENE_PORTRAIT = {
   src: "/images/hero/founder-portrait.webp",

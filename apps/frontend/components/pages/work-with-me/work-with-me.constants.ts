@@ -124,6 +124,9 @@ export const TOOLS_INVENTORY = {
     "Google Search Console",
     "Google Analytics",
     "Google Ads",
+    "Google Business Profile",
+    "Bing Web master",
+    "Google Ads Manager"
   ],
 } as const;
 
