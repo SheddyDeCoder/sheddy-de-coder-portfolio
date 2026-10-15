@@ -1,19 +1,24 @@
+
 import { SITE_CONFIG } from "./site-config";
+
+const personId = `${SITE_CONFIG.url}/#person`;
+const websiteId = `${SITE_CONFIG.url}/#website`;
+const organizationId = `${SITE_CONFIG.organization.url}#organization`;
 
 export function PersonJsonLd() {
   const data = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": personId,
     name: SITE_CONFIG.legalName,
     alternateName: SITE_CONFIG.name,
     url: SITE_CONFIG.url,
     jobTitle: SITE_CONFIG.jobTitle,
-    worksFor: {
-      "@type": "Organization",
-      name: SITE_CONFIG.organization.name,
-      url: SITE_CONFIG.organization.url,
-    },
+    description: SITE_CONFIG.defaultDescription,
     sameAs: SITE_CONFIG.sameAs,
+    worksFor: {
+      "@id": organizationId,
+    },
   };
 
   return (
@@ -28,12 +33,14 @@ export function OrganizationJsonLd() {
   const data = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": organizationId,
     name: SITE_CONFIG.organization.name,
-    url: SITE_CONFIG.organization.url,
     founder: {
-      "@type": "Person",
-      name: SITE_CONFIG.legalName,
-      alternateName: SITE_CONFIG.name,
+      "@id": personId,
+    },
+    subjectOf: {
+      "@type": "WebPage",
+      url: SITE_CONFIG.organization.url,
     },
   };
 
@@ -49,14 +56,14 @@ export function WebSiteJsonLd() {
   const data = {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": websiteId,
     name: SITE_CONFIG.name,
     url: SITE_CONFIG.url,
     description: SITE_CONFIG.defaultDescription,
     author: {
-      "@type": "Person",
-      name: SITE_CONFIG.legalName,
-      alternateName: SITE_CONFIG.name,
+      "@id": personId,
     },
+    inLanguage: "en",
   };
 
   return (

@@ -13,15 +13,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog",
   ].map((path) => ({
     url: `${SITE_CONFIG.url}${path}`,
-    lastModified: new Date(),
   }));
 
   const projectRoutes = CASE_STUDIES.map((project) => ({
     url: `${SITE_CONFIG.url}/projects/${project.slug}`,
-    lastModified: new Date(),
   }));
-
-  
 
   return [...staticRoutes, ...projectRoutes];
 }

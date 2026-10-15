@@ -10,14 +10,16 @@ import {
 } from "@/components/pages/about";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Shedrack Nliam",
   description:
-    "Shedrack Nliam (Sheddy De Coder) — Technology Founder and Product Builder. From social media management and digital design to full-stack software development, founding TechMindsVerse, and building fintech, product, and media solutions.",
+    "Discover the story of Shedrack Nliam (Sheddy De Coder), a technology founder and digital solutions strategist. Explore his journey through technology, entrepreneurship, digital media, leadership, and founding TechMindsVerse.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "About Shedrack Nliam — Sheddy De Coder",
+    title: "About Shedrack Nliam | Sheddy De Coder",
     description:
-      "Technology Founder, Product Builder, and Digital Strategist. Founder of TechMindsVerse.",
+      "The story, experience, and vision behind Sheddy De Coder — technology founder and digital solutions strategist.",
+    url: "/about",
+    type: "website",
   },
 };
 

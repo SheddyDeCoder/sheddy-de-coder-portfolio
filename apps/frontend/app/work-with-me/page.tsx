@@ -11,15 +11,24 @@ import {
 } from "@/components/pages/work-with-me";
 import { BookACallPanel } from "@/components/shared/booking";
 
+
 export const metadata: Metadata = {
-  title: "Work With Me",
+  title: "Work With Me | Websites, SEO & Digital Solutions",
+
   description:
-    "Technology, product development, and digital visibility services for founders, startups, businesses, and personal brands. Based in Nigeria, open to remote collaboration worldwide.",
-  alternates: { canonical: "/work-with-me" },
+    "Work with Shedrack Nliam (Sheddy De Coder) to build professional websites and digital solutions, improve SEO and online visibility, and simplify business workflows through practical automation.",
+
+  alternates: {
+    canonical: "/work-with-me",
+  },
+
   openGraph: {
-    title: "Work With Me — Technology, Product Development & Digital Visibility",
+    title:
+      "Work With Me | Websites, SEO & Digital Solutions",
     description:
-      "Build useful digital products and improve digital visibility through product development, web development, SEO, and search visibility.",
+      "Helping founders, executives, and businesses build digital solutions, grow online visibility, and automate repetitive workflows.",
+    url: "/work-with-me",
+    type: "website",
   },
 };
 

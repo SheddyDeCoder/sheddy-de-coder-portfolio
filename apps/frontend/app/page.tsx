@@ -1,5 +1,6 @@
 
-
+import type { Metadata } from "next";
+import { SITE_CONFIG } from "@/lib/seo/site-config";
 import {
   OpeningIntro,
   OpeningScene,
@@ -22,6 +23,31 @@ import {
   SocialConnection,
   FinalCta,
 } from "@/components/sections/latest-updates-cta";
+
+
+
+export const metadata: Metadata = {
+  title: {
+    absolute:
+      "Shedrack Nliam (Sheddy De Coder) | Digital Solutions Strategist",
+  },
+
+  description:
+    "Shedrack Nliam (Sheddy De Coder) helps founders, executives, and businesses build websites and digital solutions, improve SEO and online visibility, and simplify workflows through automation.",
+
+  alternates: {
+    canonical: SITE_CONFIG.url,
+  },
+
+  openGraph: {
+    title:
+      "Shedrack Nliam (Sheddy De Coder) | Digital Solutions Strategist",
+    description:
+      "Helping founders and businesses build digital solutions, grow their online visibility, and automate workflows.",
+    url: SITE_CONFIG.url,
+    type: "website",
+  },
+};
 
 export default function HomePage() {
   return (

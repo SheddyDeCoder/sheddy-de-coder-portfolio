@@ -5,15 +5,23 @@ import { SocialConnection } from "@/components/sections/latest-updates-cta";
 
 export const metadata: Metadata = {
   title: "Contact",
+
   description:
-    "Get in touch with Shedrack Nliam (Sheddy De Coder) for projects, collaboration, partnerships, speaking, or mentorship — based in Nigeria, open to remote and international opportunities.",
-  alternates: { canonical: "/contact" },
+    "Contact Shedrack Nliam (Sheddy De Coder) for website development, SEO, digital solutions, business automation, partnerships, speaking, and professional collaborations.",
+
+  alternates: {
+    canonical: "/contact",
+  },
+
   openGraph: {
-    title: "Contact — Shedrack Nliam (Sheddy De Coder)",
+    title: "Contact Shedrack Nliam | Sheddy De Coder",
     description:
-      "Get in touch with Shedrack Nliam (Sheddy De Coder) for projects, collaboration, partnerships, speaking, or mentorship — based in Nigeria, open to remote and international opportunities.",
+      "Let's connect about digital solutions, websites, SEO, automation, partnerships, and collaboration opportunities.",
+    url: "/contact",
+    type: "website",
   },
 };
+
 export default function ContactPage() {
   return (
     <>
